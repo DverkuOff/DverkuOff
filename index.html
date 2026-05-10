@@ -780,6 +780,54 @@
   .thumb-6 .heatmap i.l3 { background: color-mix(in oklab, var(--accent) 75%, oklch(88% 0.012 70)); }
   .thumb-6 .heatmap i.l4 { background: var(--accent); }
 
+  /* thumb-7: микросервисная сетка ISA-BOT */
+  .thumb-7 {
+    background:
+      radial-gradient(circle at 20% 80%, color-mix(in oklab, var(--accent) 13%, transparent), transparent 55%),
+      oklch(94% 0.026 65);
+  }
+  .thumb-7 .micro {
+    width: 82%;
+    height: 82%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 7px;
+  }
+  .thumb-7 .micro .svc {
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    color: var(--fg-soft);
+    letter-spacing: -0.02em;
+    padding: 4px;
+    text-align: center;
+  }
+  .thumb-7 .micro .svc.hub {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+  .thumb-7 .micro .svc.go {
+    background: oklch(58% 0.13 215);
+    color: white;
+    border-color: oklch(58% 0.13 215);
+    font-weight: 600;
+  }
+  .thumb-7 .micro .svc.q {
+    background: oklch(28% 0.04 50);
+    color: oklch(88% 0.02 70);
+    border-color: oklch(28% 0.04 50);
+    font-style: italic;
+    font-family: var(--font-display);
+    font-size: 12px;
+  }
+
   .project-meta {
     display: flex;
     gap: 14px;
@@ -1345,6 +1393,40 @@
         </p>
         <div class="stack">
           <span>MCP SDK</span><span>FastMCP</span><span>SQLite</span><span>Python 3.12</span>
+        </div>
+      </a>
+
+      <a class="project" href="#contact">
+        <div class="project-thumb thumb-7" aria-hidden="true">
+          <div class="micro">
+            <div class="svc hub">bot</div>
+            <div class="svc">parser</div>
+            <div class="svc q">MQ</div>
+            <div class="svc">parser-api</div>
+            <div class="svc">mongo-api</div>
+            <div class="svc go">mailing</div>
+            <div class="svc">redis</div>
+            <div class="svc">checker</div>
+            <div class="svc">redirect</div>
+            <div class="svc q">fanout</div>
+            <div class="svc">scrapper</div>
+            <div class="svc">landing</div>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="year">2024—2026</span>
+          <span>Telegram · Microservices</span>
+        </div>
+        <h3 class="project-title">ISA-BOT — мониторинг iPhone-объявлений</h3>
+        <p class="project-desc">
+          Микросервисная экосистема из 9 репозиториев: Telethon-парсер
+          5 Telegram-каналов через MTProto, валидация и нормализация
+          в parser-api, нотификатор на Go, платежи через YooKassa,
+          FSM на Redis. RabbitMQ-fanout между сервисами, Postgres +
+          MongoDB для разной природы данных.
+        </p>
+        <div class="stack">
+          <span>aiogram</span><span>Telethon</span><span>RabbitMQ</span><span>Go</span><span>MongoDB</span><span>YooKassa</span>
         </div>
       </a>
 
