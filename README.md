@@ -1,6 +1,11 @@
+<!-- WAVE HEADER -->
+<a href="https://dverkuoff.github.io/DverkuOff/">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F0E2C8,100:C46A52&height=160&section=header&animation=fadeIn" width="100%" alt="" />
+</a>
+
 <div align="center">
   <br>
-  <img src="avatar.png" width="180" alt="Ivan · DverkuOff" />
+  <img src="avatar.png" width="170" alt="Ivan · DverkuOff" />
 
   <h1>Ivan&nbsp;·&nbsp;<i>DverkuOff</i></h1>
 
@@ -22,8 +27,8 @@
 
   <br>
 
-  <a href="https://readme-typing-svg.demolab.com/?lines=AI+Automation+%E2%80%A2+n8n+%E2%80%A2+OpenRouter+%E2%80%A2+MCP;Backend+%E2%80%A2+FastAPI+%E2%80%A2+aiogram+%E2%80%A2+Go+%E2%80%A2+Gin;VPN+%E2%80%A2+VLESS+%E2%80%A2+3x-ui+%E2%80%A2+Reality+%E2%80%A2+MTProto+Fake-TLS;%C2%ABAI+%D0%BF%D0%B8%D1%88%D0%B5%D1%82+%D0%BA%D0%BE%D0%B4+%E2%80%94+%D1%8F+%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B%C2%BB&font=Newsreader&size=20&weight=400&color=8C3A2C&center=true&vCenter=true&width=720&pause=900&duration=2800&italic=true">
-    <img src="https://readme-typing-svg.demolab.com/?lines=AI+Automation+%E2%80%A2+n8n+%E2%80%A2+OpenRouter+%E2%80%A2+MCP;Backend+%E2%80%A2+FastAPI+%E2%80%A2+aiogram+%E2%80%A2+Go+%E2%80%A2+Gin;VPN+%E2%80%A2+VLESS+%E2%80%A2+3x-ui+%E2%80%A2+Reality+%E2%80%A2+MTProto+Fake-TLS;%C2%ABAI+%D0%BF%D0%B8%D1%88%D0%B5%D1%82+%D0%BA%D0%BE%D0%B4+%E2%80%94+%D1%8F+%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B%C2%BB&font=Newsreader&size=20&weight=400&color=8C3A2C&center=true&vCenter=true&width=720&pause=900&duration=2800&italic=true" />
+  <a href="https://readme-typing-svg.demolab.com/?lines=AI+Automation+%E2%80%A2+n8n+%E2%80%A2+OpenRouter+%E2%80%A2+MCP;Backend+%E2%80%A2+Python+%E2%80%A2+Go+%E2%80%A2+Swift;VPN+%E2%80%A2+VLESS+%E2%80%A2+3x-ui+%E2%80%A2+Reality+%E2%80%A2+Fake-TLS;DevOps+%E2%80%A2+Docker+%E2%80%A2+Ansible+%E2%80%A2+Terraform&font=Newsreader&size=20&weight=400&color=8C3A2C&center=true&vCenter=true&width=720&pause=900&duration=2800&italic=true">
+    <img src="https://readme-typing-svg.demolab.com/?lines=AI+Automation+%E2%80%A2+n8n+%E2%80%A2+OpenRouter+%E2%80%A2+MCP;Backend+%E2%80%A2+Python+%E2%80%A2+Go+%E2%80%A2+Swift;VPN+%E2%80%A2+VLESS+%E2%80%A2+3x-ui+%E2%80%A2+Reality+%E2%80%A2+Fake-TLS;DevOps+%E2%80%A2+Docker+%E2%80%A2+Ansible+%E2%80%A2+Terraform&font=Newsreader&size=20&weight=400&color=8C3A2C&center=true&vCenter=true&width=720&pause=900&duration=2800&italic=true" />
   </a>
 </div>
 
@@ -41,119 +46,112 @@
 
 ## **02**&nbsp;&nbsp;/&nbsp;&nbsp;Стек
 
-#### AI · Автоматизация
-
-<p>
-  <img src="https://img.shields.io/badge/n8n-C46A52?style=flat-square&logo=n8n&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/OpenRouter-C46A52?style=flat-square&logo=openai&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/Anthropic-C46A52?style=flat-square&logo=anthropic&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/MCP-C46A52?style=flat-square&logo=anthropic&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/OpenAI-EEE6D3?style=flat-square&logo=openai&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Ollama-EEE6D3?style=flat-square&logo=ollama&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Whisper-EEE6D3?style=flat-square&logo=openai&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/ComfyUI-EEE6D3?style=flat-square&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/pgvector-EEE6D3?style=flat-square&logo=postgresql&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/HuggingFace-EEE6D3?style=flat-square&logo=huggingface&logoColor=C46A52" />
-</p>
-
-#### AI Coding · Design
-
-<p>
-  <img src="https://img.shields.io/badge/Claude%20Code-C46A52?style=flat-square&logo=anthropic&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/Ruflo-C46A52?style=flat-square&logo=anthropic&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/Cursor-EEE6D3?style=flat-square&logo=cursor&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/OpenDesign-EEE6D3?style=flat-square&logo=figma&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Copilot-EEE6D3?style=flat-square&logo=githubcopilot&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Figma-EEE6D3?style=flat-square&logo=figma&logoColor=C46A52" />
-</p>
-
-#### Backend · Telegram
-
-<p>
-  <img src="https://img.shields.io/badge/Python-C46A52?style=flat-square&logo=python&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/Go-C46A52?style=flat-square&logo=go&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/FastAPI-EEE6D3?style=flat-square&logo=fastapi&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/aiogram-EEE6D3?style=flat-square&logo=telegram&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Telethon-EEE6D3?style=flat-square&logo=python&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Local%20Bot%20API-EEE6D3?style=flat-square&logo=telegram&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Gunicorn-EEE6D3?style=flat-square&logo=gunicorn&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/SQLAlchemy-EEE6D3?style=flat-square&logo=sqlalchemy&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Gin-EEE6D3?style=flat-square&logo=gin&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/gRPC-EEE6D3?style=flat-square&logo=grpc&logoColor=C46A52" />
-</p>
-
-#### Frontend · iOS
-
-<p>
-  <img src="https://img.shields.io/badge/Next.js-EEE6D3?style=flat-square&logo=nextdotjs&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/React-EEE6D3?style=flat-square&logo=react&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Vite-EEE6D3?style=flat-square&logo=vite&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Tailwind-EEE6D3?style=flat-square&logo=tailwindcss&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/shadcn%2Fui-EEE6D3?style=flat-square&logo=shadcnui&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Swift-EEE6D3?style=flat-square&logo=swift&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/SwiftUI-EEE6D3?style=flat-square&logo=swift&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Live%20Activities-EEE6D3?style=flat-square&logo=apple&logoColor=C46A52" />
-</p>
-
-#### VPN · Proxy
-
-<p>
-  <img src="https://img.shields.io/badge/VLESS-C46A52?style=flat-square&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/3x--ui-C46A52?style=flat-square&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/Reality-EEE6D3?style=flat-square&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Xray--core-EEE6D3?style=flat-square&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/MTProto%20Fake--TLS-EEE6D3?style=flat-square&logo=telegram&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Cloudflare-EEE6D3?style=flat-square&logo=cloudflare&logoColor=C46A52" />
-</p>
-
-#### DevOps · Infra · Observability
-
-<p>
-  <img src="https://img.shields.io/badge/Docker-C46A52?style=flat-square&logo=docker&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/Ansible-C46A52?style=flat-square&logo=ansible&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/Terraform-C46A52?style=flat-square&logo=terraform&logoColor=FBF6EC" />
-  <img src="https://img.shields.io/badge/Nginx-EEE6D3?style=flat-square&logo=nginx&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Traefik-EEE6D3?style=flat-square&logo=traefikproxy&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-EEE6D3?style=flat-square&logo=githubactions&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Linux-EEE6D3?style=flat-square&logo=linux&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Grafana-EEE6D3?style=flat-square&logo=grafana&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Prometheus-EEE6D3?style=flat-square&logo=prometheus&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Loki-EEE6D3?style=flat-square&logo=grafana&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/ELK-EEE6D3?style=flat-square&logo=elasticsearch&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/RabbitMQ-EEE6D3?style=flat-square&logo=rabbitmq&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Kafka-EEE6D3?style=flat-square&logo=apachekafka&logoColor=C46A52" />
-</p>
-
-#### Data · Cloud · Payments
-
-<p>
-  <img src="https://img.shields.io/badge/PostgreSQL-EEE6D3?style=flat-square&logo=postgresql&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Supabase-EEE6D3?style=flat-square&logo=supabase&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Redis-EEE6D3?style=flat-square&logo=redis&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/MongoDB-EEE6D3?style=flat-square&logo=mongodb&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Yandex%20Cloud-EEE6D3?style=flat-square&logo=yandexcloud&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Timeweb%20Cloud-EEE6D3?style=flat-square&logo=icloud&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/YooKassa-EEE6D3?style=flat-square&logo=yandex&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Telegram%20Stars-EEE6D3?style=flat-square&logo=telegram&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/CryptoBot-EEE6D3?style=flat-square&logo=bitcoin&logoColor=C46A52" />
-</p>
+| | |
+|---|---|
+| **Языки** | `Python` · `Go` · `Swift` · `TypeScript` · `SQL` · `Bash` |
+| **Базы данных** | `PostgreSQL` · `Redis` · `MongoDB` · `Supabase` · `pgvector` |
+| **AI · Автоматизация** | `OpenRouter` · `Anthropic` · `OpenAI` · `Ollama` · `ComfyUI` · `Whisper` · `n8n` · `MCP` |
+| **AI-coding** | `Claude Code` · `Ruflo` · `Cursor` · `OpenDesign` · `Copilot` · `Figma` |
+| **DevOps · Infra** | `Docker` · `Ansible` · `Terraform` · `Nginx` · `Traefik` · `GitHub Actions` · `Linux` · `Cloudflare` |
+| **Observability · Streaming** | `Grafana` · `Prometheus` · `Loki` · `ELK` · `RabbitMQ` · `Kafka` |
+| **VPN · Proxy** | `VLESS` · `Xray` · `3x-ui` · `Reality` · `MTProto Fake-TLS` |
+| **Cloud** | `Yandex Cloud` · `Timeweb Cloud` · `VPS / bare-metal` |
+| **Payments** | `YooKassa` · `Telegram Stars` · `CryptoBot` |
 
 ---
 
-## **03**&nbsp;&nbsp;/&nbsp;&nbsp;Несколько вещей, которыми _горжусь_
+## **03**&nbsp;&nbsp;/&nbsp;&nbsp;Несколько вещей, которыми горжусь
 
-| Год | Проект | Что делает | Стек |
-|---|---|---|---|
-| `2026` | **Quasar** | Детерминированный AI-конфигуратор серверов: 7-шаговый pipeline подбирает CPU/RAM/RAID/PSU и генерит ТЗ под 44/223-ФЗ в DOCX/XLSX. Оркестрация через RuFlo-swarm на 15 агентов. | FastAPI · React · PostgreSQL · OpenRouter · RuFlo |
-| `2025—26` | **VPN-платформа на VLESS** | 5 микросервисов в одной экосистеме: панель, бот-продажник, consumer, payments, mini-app. Reality, MTProto Fake-TLS, обход блокировок. | aiogram · 3x-ui · VLESS · FastAPI |
-| `2024—26` | **ISA-BOT** | Микросервисный TG-бот для мониторинга iPhone-объявлений. 9 репо, MTProto-парсинг через Telethon, RabbitMQ fanout, нотификатор на Go. | Telethon · RabbitMQ · Go · MongoDB |
-| `2024—25` | **BackupX** | Асинхронный RabbitMQ-консьюмер для распределённого резервного копирования. asyncio, Prometheus-метрики, Telegram-алерты. | Python · asyncio · RabbitMQ · Prometheus |
-| `2025` | **MIRÉA-хак — OCR** | Хакатонный MVP: оцифровка паспортов оборудования через PaddleOCR + OpenCV, классификация документов, экспорт в XLSX/JSON. | PaddleOCR · OpenCV · FastAPI · React |
-| `2025` | **oticon-infra** | Полный IaC-стек на Timeweb Cloud: Terraform поднимает VM, Ansible настраивает SSH-hardening + Traefik с Let's Encrypt. | Terraform · Ansible · Traefik · Docker |
-| `2026` | **UDaily** | Personal-MCP сервер для Claude Desktop: трекинг тренировок, рациона, метрик. Streamable HTTP, FastMCP, SQLite WAL. | MCP SDK · FastMCP · SQLite |
-| `2026` | **iOS Live Activities** | Native SwiftUI с Live Activities на Lock Screen и Dynamic Island. Combine для реактивщины. | SwiftUI · Live Activities · Combine |
-
-> Полная версия с превьюшками — [dverkuoff.github.io](https://dverkuoff.github.io/DverkuOff/).
+<table>
+<tr>
+  <td width="50%" valign="top">
+    <a href="https://dverkuoff.github.io/DverkuOff/#projects">
+      <img src="assets/projects/quasar.svg" width="100%" alt="Quasar" />
+    </a>
+    <br><br>
+    <b>Quasar</b>&nbsp;·&nbsp;<code>2026</code>&nbsp;·&nbsp;<i>AI · B2B</i><br><br>
+    Детерминированный AI-конфигуратор серверов: 7-шаговый pipeline подбирает CPU/RAM/RAID/PSU и генерит ТЗ под 44/223-ФЗ в DOCX/XLSX. Оркестрация через RuFlo-swarm на 15 агентов.
+    <br><br>
+    <sub><code>FastAPI</code> · <code>React</code> · <code>PostgreSQL</code> · <code>OpenRouter</code> · <code>RuFlo</code></sub>
+  </td>
+  <td width="50%" valign="top">
+    <a href="https://dverkuoff.github.io/DverkuOff/#projects">
+      <img src="assets/projects/vless.svg" width="100%" alt="VLESS платформа" />
+    </a>
+    <br><br>
+    <b>VPN-платформа на VLESS</b>&nbsp;·&nbsp;<code>2025—26</code>&nbsp;·&nbsp;<i>VPN · Full-stack</i><br><br>
+    Пять микросервисов в одной экосистеме: панель (3x-ui), бот-продажник, consumer, payments, mini-app. Reality, MTProto Fake-TLS — обход всех известных блокировок.
+    <br><br>
+    <sub><code>aiogram</code> · <code>3x-ui</code> · <code>VLESS</code> · <code>FastAPI</code></sub>
+  </td>
+</tr>
+<tr>
+  <td width="50%" valign="top">
+    <a href="https://dverkuoff.github.io/DverkuOff/#projects">
+      <img src="assets/projects/isa-bot.svg" width="100%" alt="ISA-BOT" />
+    </a>
+    <br><br>
+    <b>ISA-BOT</b>&nbsp;·&nbsp;<code>2024—26</code>&nbsp;·&nbsp;<i>Telegram · Microservices</i><br><br>
+    Микросервисная экосистема из 9 репозиториев: Telethon-парсер 5 Telegram-каналов через MTProto, валидация в parser-api, нотификатор на Go, RabbitMQ-fanout, YooKassa.
+    <br><br>
+    <sub><code>aiogram</code> · <code>Telethon</code> · <code>RabbitMQ</code> · <code>Go</code> · <code>MongoDB</code></sub>
+  </td>
+  <td width="50%" valign="top">
+    <a href="https://dverkuoff.github.io/DverkuOff/#projects">
+      <img src="assets/projects/backupx.svg" width="100%" alt="BackupX" />
+    </a>
+    <br><br>
+    <b>BackupX</b>&nbsp;·&nbsp;<code>2024—25</code>&nbsp;·&nbsp;<i>DevOps · Async Python</i><br><br>
+    RabbitMQ-консьюмер для распределённого резервного копирования. Asyncio + aio-pika, ack/retry, Prometheus-метрики, Telegram-алерты. Гигабайты снапшотов параллельно.
+    <br><br>
+    <sub><code>Python</code> · <code>asyncio</code> · <code>RabbitMQ</code> · <code>Prometheus</code></sub>
+  </td>
+</tr>
+<tr>
+  <td width="50%" valign="top">
+    <a href="https://dverkuoff.github.io/DverkuOff/#projects">
+      <img src="assets/projects/mirea.svg" width="100%" alt="MIRÉA OCR" />
+    </a>
+    <br><br>
+    <b>МИРЭА — оцифровка паспортов</b>&nbsp;·&nbsp;<code>2025</code>&nbsp;·&nbsp;<i>ML · OCR</i><br><br>
+    Хакатонный MVP под B2B: OCR-pipeline на PaddleOCR + OpenCV, классификация документов, парсинг полей, экспорт в XLSX/JSON. Frontend стилизован под 1С-форму.
+    <br><br>
+    <sub><code>PaddleOCR</code> · <code>OpenCV</code> · <code>FastAPI</code> · <code>React</code></sub>
+  </td>
+  <td width="50%" valign="top">
+    <a href="https://dverkuoff.github.io/DverkuOff/#projects">
+      <img src="assets/projects/oticon.svg" width="100%" alt="oticon-infra" />
+    </a>
+    <br><br>
+    <b>oticon-infra</b>&nbsp;·&nbsp;<code>2025</code>&nbsp;·&nbsp;<i>DevOps · IaC</i><br><br>
+    Полный IaC-стек на Timeweb Cloud: Terraform поднимает VM, Ansible настраивает SSH-hardening + Traefik с автоматическим SSL. Разворачивается одной командой.
+    <br><br>
+    <sub><code>Terraform</code> · <code>Ansible</code> · <code>Traefik</code> · <code>Docker</code></sub>
+  </td>
+</tr>
+<tr>
+  <td width="50%" valign="top">
+    <a href="https://dverkuoff.github.io/DverkuOff/#projects">
+      <img src="assets/projects/udaily.svg" width="100%" alt="UDaily" />
+    </a>
+    <br><br>
+    <b>UDaily</b>&nbsp;·&nbsp;<code>2026</code>&nbsp;·&nbsp;<i>MCP · Personal AI</i><br><br>
+    Personal-MCP сервер для Claude Desktop: трекинг тренировок, рациона, сна, метрик. Streamable HTTP, FastMCP, SQLite с WAL для concurrent reads.
+    <br><br>
+    <sub><code>MCP SDK</code> · <code>FastMCP</code> · <code>SQLite</code> · <code>Python 3.12</code></sub>
+  </td>
+  <td width="50%" valign="top">
+    <a href="https://dverkuoff.github.io/DverkuOff/#projects">
+      <img src="assets/projects/ios.svg" width="100%" alt="iOS Live Activities" />
+    </a>
+    <br><br>
+    <b>iOS Live Activities</b>&nbsp;·&nbsp;<code>2026</code>&nbsp;·&nbsp;<i>iOS · SwiftUI</i><br><br>
+    Native SwiftUI с Live Activities на Lock Screen и Dynamic Island. Combine для реактивщины. Опыт работы с native-стеком, которого нет у большинства бэкендеров.
+    <br><br>
+    <sub><code>SwiftUI</code> · <code>Live Activities</code> · <code>Combine</code></sub>
+  </td>
+</tr>
+</table>
 
 ---
 
@@ -180,6 +178,5 @@
   <a href="https://dverkuoff.github.io/DverkuOff/"><img src="https://img.shields.io/badge/Site-dverkuoff.github.io-C46A52?style=flat-square&logoColor=FBF6EC&labelColor=8C3A2C" /></a>
 </p>
 
-<br>
-
-<sub><i>code → coffee → ship → repeat</i></sub>
+<!-- WAVE FOOTER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:C46A52,100:F0E2C8&height=140&section=footer&animation=fadeIn" width="100%" alt="" />
