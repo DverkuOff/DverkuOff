@@ -1,10 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
-  <rect width="320" height="180" fill="#FBF6EC" rx="8"/>
-  <g transform="translate(70 30)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <rect width="320" height="200" fill="#FBF6EC" rx="8"/>
+  <g transform="translate(70 36)">
     <g font-family="JetBrains Mono, monospace" font-size="9" fill="#8C3A2C">
       <g>
         <rect x="0" y="0" width="180" height="22" rx="3" fill="#FBF6EC" stroke="#C46A52" stroke-width="1.2"/>
-        <circle cx="14" cy="11" r="3" fill="#7BAF6B"/>
+        <circle cx="14" cy="11" r="3" fill="#7BAF6B">
+          <animate attributeName="r" values="3;3.6;3" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+        </circle>
         <text x="26" y="14">snap-0245.tar.gz</text>
         <text x="156" y="14" text-anchor="end" fill="#8B8378">1.2 GB</text>
       </g>
@@ -15,12 +17,17 @@
         <text x="156" y="14" text-anchor="end" fill="#8B8378">980 MB</text>
       </g>
       <g transform="translate(0 52)">
-        <rect x="0" y="0" width="180" height="22" rx="3" fill="#FAEFE0" stroke="#C46A52" stroke-width="1.6"/>
+        <rect x="0" y="0" width="180" height="22" rx="3" fill="#FAEFE0" stroke="#C46A52" stroke-width="1.6">
+          <animate attributeName="fill" values="#FAEFE0;#F5DCC4;#FAEFE0" dur="1.8s" repeatCount="indefinite"/>
+        </rect>
         <circle cx="14" cy="11" r="3.5" fill="#C46A52">
-          <animate attributeName="r" values="3.5;4.5;3.5" dur="1.8s" repeatCount="indefinite"/>
+          <animate attributeName="r" values="3.5;5;3.5" dur="1.6s" repeatCount="indefinite"/>
         </circle>
         <text x="26" y="14" font-weight="700" fill="#8C3A2C">snap-0243.tar.gz</text>
-        <text x="156" y="14" text-anchor="end" fill="#C46A52">67%</text>
+        <text x="156" y="14" text-anchor="end" fill="#C46A52">
+          <tspan>67%</tspan>
+          <animate attributeName="opacity" values="1;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+        </text>
       </g>
       <g transform="translate(0 78)">
         <rect x="0" y="0" width="180" height="22" rx="3" fill="#FBF6EC" stroke="#C46A52" stroke-width="1.2"/>
@@ -30,5 +37,5 @@
       </g>
     </g>
   </g>
-  <text x="160" y="160" font-family="Newsreader, Georgia, serif" font-size="13" font-style="italic" fill="#8B8378" text-anchor="middle">RabbitMQ · async · ack/retry</text>
+  <text x="160" y="180" font-family="Newsreader, Georgia, serif" font-size="13" font-style="italic" fill="#8B8378" text-anchor="middle">RabbitMQ · async · ack/retry</text>
 </svg>
