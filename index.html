@@ -685,6 +685,101 @@
   .iphone-apps i:nth-child(1) { background: var(--accent); }
   .iphone-apps i:nth-child(3) { background: oklch(70% 0.13 145); }
 
+  /* thumb-5: OCR / документ с scan-line */
+  .thumb-5 {
+    background:
+      radial-gradient(circle at 80% 20%, color-mix(in oklab, var(--accent) 12%, transparent), transparent 55%),
+      oklch(95% 0.022 65);
+  }
+  .thumb-5 .doc-mock {
+    width: 58%;
+    aspect-ratio: 1 / 1.32;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    padding: 14% 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    box-shadow: 0 14px 28px -8px oklch(15% 0.005 50 / 0.18);
+    transform: rotate(-1.5deg);
+    transition: transform .35s ease;
+    overflow: hidden;
+  }
+  .project:hover .thumb-5 .doc-mock { transform: rotate(0deg) translateY(-2px); }
+  .thumb-5 .doc-mock .ttl {
+    height: 7px;
+    width: 50%;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 4px;
+  }
+  .thumb-5 .doc-mock .row {
+    height: 3px;
+    border-radius: 2px;
+    background: oklch(86% 0.018 60);
+  }
+  .thumb-5 .doc-mock .row.med { width: 86%; }
+  .thumb-5 .doc-mock .row.short { width: 58%; }
+  .thumb-5 .doc-mock .stamp {
+    position: absolute;
+    bottom: 14%;
+    right: 10%;
+    width: 28%;
+    aspect-ratio: 1;
+    border: 1.5px solid color-mix(in oklab, var(--accent) 60%, transparent);
+    border-radius: 50%;
+    transform: rotate(-12deg);
+    opacity: 0.7;
+  }
+  .thumb-5 .scanline {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .thumb-5 .scanline::before {
+    content: "";
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--accent) 80%, transparent), transparent);
+    box-shadow: 0 0 12px color-mix(in oklab, var(--accent) 50%, transparent);
+    animation: scan 3.2s ease-in-out infinite;
+  }
+  @keyframes scan {
+    0%, 100% { top: 22%; opacity: 0; }
+    20%      { opacity: 1; }
+    50%      { top: 75%; opacity: 1; }
+    80%      { opacity: 0; }
+  }
+
+  /* thumb-6: contribution heatmap / трекер */
+  .thumb-6 {
+    background: var(--surface);
+    display: grid;
+    place-items: center;
+  }
+  .thumb-6 .heatmap {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 4px;
+    width: 70%;
+    aspect-ratio: 14 / 7;
+  }
+  .thumb-6 .heatmap i {
+    display: block;
+    background: oklch(92% 0.012 70);
+    border-radius: 2px;
+  }
+  .thumb-6 .heatmap i.l1 { background: color-mix(in oklab, var(--accent) 22%, oklch(95% 0.012 70)); }
+  .thumb-6 .heatmap i.l2 { background: color-mix(in oklab, var(--accent) 45%, oklch(92% 0.012 70)); }
+  .thumb-6 .heatmap i.l3 { background: color-mix(in oklab, var(--accent) 75%, oklch(88% 0.012 70)); }
+  .thumb-6 .heatmap i.l4 { background: var(--accent); }
+
   .project-meta {
     display: flex;
     gap: 14px;
@@ -1099,17 +1194,18 @@
         <div class="project-thumb thumb-1" aria-hidden="true"></div>
         <div class="project-meta">
           <span class="year">2026</span>
-          <span>AI Automation</span>
+          <span>AI · B2B configurator</span>
         </div>
-        <h3 class="project-title">Мульти-агентные пайплайны на n8n + MCP</h3>
+        <h3 class="project-title">Quasar — конфигуратор серверов</h3>
         <p class="project-desc">
-          Связка n8n с MCP-серверами и OpenRouter для оркестрации
-          моделей: ресёрч, парсинг, генерация контента, действия в
-          браузере через browser-use. Агенты ходят в БД, веб и
-          кодовую базу через инструменты.
+          Детерминированный 7-шаговый pipeline подбирает CPU / RAM /
+          RAID / PSU из каталога Supermicro / Dell / HPE под constraints
+          клиента. Генерирует ТЗ и КП в DOCX/XLSX (44-ФЗ / 223-ФЗ),
+          складывает в S3. LLM — только для обогащения текста, ядро —
+          pure-Python rules. Оркестрация через RuFlo-swarm на 15 агентов.
         </p>
         <div class="stack">
-          <span>n8n</span><span>MCP</span><span>OpenRouter</span><span>browser-use</span>
+          <span>FastAPI</span><span>React 19</span><span>PostgreSQL</span><span>OpenRouter</span><span>RuFlo</span>
         </div>
       </a>
 
@@ -1138,13 +1234,14 @@
         </div>
         <h3 class="project-title">VPN-платформа на VLESS</h3>
         <p class="project-desc">
-          Полный стек под российский рынок: панель управления
+          Пять микросервисов в одной экосистеме: панель управления
           (3x-ui), бот-продажник, consumer-сервис, payments, mini-app.
-          VLESS, Reality, MTProto Fake-TLS, обход блокировок.
-          Десятки активных клиентов.
+          VLESS, Reality, MTProto Fake-TLS — обход всех известных
+          блокировок. Полный жизненный цикл клиента: триал, оплата
+          через CryptoBot, продление, инвайты.
         </p>
         <div class="stack">
-          <span>VLESS</span><span>3x-ui</span><span>aiogram</span><span>FastAPI</span>
+          <span>VLESS</span><span>Reality</span><span>3x-ui</span><span>aiogram</span><span>FastAPI</span>
         </div>
       </a>
 
@@ -1177,18 +1274,77 @@
           </div>
         </div>
         <div class="project-meta">
-          <span class="year">2025—2026</span>
-          <span>Telegram · Backend</span>
+          <span class="year">2025</span>
+          <span>DevOps · IaC</span>
         </div>
-        <h3 class="project-title">Telegram-bot экосистема</h3>
+        <h3 class="project-title">Полный IaC-стек на Timeweb Cloud</h3>
         <p class="project-desc">
-          Десятки ботов под разные ниши: образование, парсеры,
-          mailing-системы, файловые сервисы, аналитика. aiogram 3 +
-          Local Bot API (без 50MB лимита), FastAPI-бэкенд,
-          PostgreSQL + Redis, очереди и фоновые задачи.
+          Terraform поднимает VM, Ansible настраивает: SSH-hardening,
+          fail2ban, Traefik с автоматическим SSL через Let's Encrypt.
+          Секреты через Vault, конфиги через cloud-init. Инфраструктура,
+          которая разворачивается одной командой и не оставляет
+          ручных шагов.
         </p>
         <div class="stack">
-          <span>aiogram</span><span>Telethon</span><span>Local Bot API</span><span>FastAPI</span>
+          <span>Terraform</span><span>Ansible</span><span>Traefik</span><span>Docker</span><span>Timeweb Cloud</span>
+        </div>
+      </a>
+
+      <a class="project" href="#contact">
+        <div class="project-thumb thumb-5" aria-hidden="true">
+          <div class="doc-mock">
+            <div class="ttl"></div>
+            <div class="row med"></div>
+            <div class="row short"></div>
+            <div class="row med"></div>
+            <div class="row med"></div>
+            <div class="row short"></div>
+            <div class="row med"></div>
+            <div class="stamp"></div>
+          </div>
+          <div class="scanline"></div>
+        </div>
+        <div class="project-meta">
+          <span class="year">2025</span>
+          <span>ML · OCR</span>
+        </div>
+        <h3 class="project-title">Оцифровка паспортов оборудования</h3>
+        <p class="project-desc">
+          Хакатонный MVP под B2B (МИРЭА): OCR-pipeline на PaddleOCR +
+          OpenCV, классификация документов, парсинг полей, ручная
+          коррекция, экспорт в XLSX/JSON. Frontend стилизован под
+          1С-форму — чтобы аудитория не переучивалась.
+        </p>
+        <div class="stack">
+          <span>PaddleOCR</span><span>OpenCV</span><span>FastAPI</span><span>React</span>
+        </div>
+      </a>
+
+      <a class="project" href="#contact">
+        <div class="project-thumb thumb-6" aria-hidden="true">
+          <div class="heatmap">
+            <i></i><i></i><i class="l1"></i><i></i><i class="l2"></i><i class="l1"></i><i></i><i class="l3"></i><i class="l2"></i><i></i><i class="l1"></i><i class="l4"></i><i class="l2"></i><i></i>
+            <i class="l1"></i><i class="l2"></i><i></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l1"></i><i></i><i class="l3"></i><i class="l2"></i><i class="l4"></i><i></i><i class="l1"></i><i class="l2"></i>
+            <i></i><i class="l4"></i><i class="l3"></i><i class="l1"></i><i></i><i class="l2"></i><i class="l4"></i><i class="l1"></i><i></i><i class="l3"></i><i class="l2"></i><i class="l1"></i><i></i><i class="l4"></i>
+            <i class="l2"></i><i></i><i class="l1"></i><i class="l3"></i><i class="l2"></i><i></i><i class="l4"></i><i class="l1"></i><i class="l2"></i><i></i><i class="l3"></i><i class="l4"></i><i class="l1"></i><i></i>
+            <i class="l1"></i><i class="l3"></i><i></i><i class="l2"></i><i class="l1"></i><i class="l4"></i><i class="l2"></i><i></i><i class="l1"></i><i class="l3"></i><i></i><i class="l2"></i><i class="l4"></i><i class="l1"></i>
+            <i></i><i class="l2"></i><i class="l1"></i><i></i><i class="l4"></i><i class="l2"></i><i></i><i class="l3"></i><i class="l2"></i><i class="l1"></i><i></i><i class="l4"></i><i class="l1"></i><i class="l2"></i>
+            <i class="l3"></i><i></i><i class="l4"></i><i class="l1"></i><i class="l2"></i><i></i><i class="l1"></i><i class="l4"></i><i></i><i class="l2"></i><i class="l1"></i><i></i><i class="l3"></i><i class="l2"></i>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="year">2026</span>
+          <span>MCP · Personal AI</span>
+        </div>
+        <h3 class="project-title">UDaily — Personal-MCP сервер</h3>
+        <p class="project-desc">
+          Кастомный MCP-сервер для Claude Desktop: трекинг тренировок
+          (наборы, сеты, веса), рациона, сна, метрик веса. Подключается
+          прямо в чат — модель видит мою историю и анализирует тренды.
+          Streamable HTTP, FastMCP, SQLite с WAL для concurrent reads.
+        </p>
+        <div class="stack">
+          <span>MCP SDK</span><span>FastMCP</span><span>SQLite</span><span>Python 3.12</span>
         </div>
       </a>
 
