@@ -68,7 +68,7 @@
   </td>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/vless.svg?v=3" width="100%" alt="VLESS платформа" />
+      <img src="assets/projects/vless.svg?v=4" width="100%" alt="VLESS платформа" />
     </a>
     <br><br>
     <b>VPN-платформа на VLESS</b>&nbsp;·&nbsp;<code>2025—26</code>&nbsp;·&nbsp;<i>VPN · Full-stack</i><br><br>
