@@ -37,13 +37,19 @@ class Ivan:
         "Mini Apps & Backend",    # FastAPI, Next.js, React, Quasar
     ]
     stack       = {
-        "ai":     ["OpenRouter", "Anthropic", "OpenAI", "ComfyUI", "n8n", "MCP"],
-        "back":   ["FastAPI", "aiogram", "Gunicorn", "SQLAlchemy", "Go"],
-        "front":  ["Next.js", "React", "Quasar", "Tailwind", "Swift"],
-        "data":   ["Postgres", "Supabase", "pgvector", "Redis", "MongoDB"],
-        "infra":  ["Docker", "Grafana", "ELK", "Nginx", "Cloudflare"],
-        "cloud":  ["Yandex Cloud", "Timeweb Cloud", "VPS / bare-metal"],
-        "vpn":    ["VLESS", "Xray", "3x-ui", "MTProto Fake-TLS"],
+        "ai":      ["OpenRouter", "Anthropic", "OpenAI", "Ollama", "Whisper",
+                    "ComfyUI", "n8n", "MCP", "Playwright", "browser-use"],
+        "py":      ["FastAPI", "aiogram", "Telethon", "Gunicorn", "SQLAlchemy",
+                    "uv", "Poetry", "ruff", "pytest", "httpx", "APScheduler"],
+        "go":      ["Gin", "Echo", "Fiber", "GORM", "sqlx", "gRPC", "Cobra"],
+        "front":   ["Next.js", "React", "Quasar", "Tailwind", "shadcn/ui"],
+        "mobile":  ["Swift", "SwiftUI", "Live Activities", "Vapor"],
+        "data":    ["Postgres", "Supabase", "pgvector", "Redis", "MongoDB", "Kafka"],
+        "infra":   ["Docker", "Ansible", "Terraform", "Nginx", "Cloudflare"],
+        "obs":     ["Grafana", "Prometheus", "Loki", "ELK"],
+        "cloud":   ["Yandex Cloud", "Timeweb Cloud", "VPS / bare-metal"],
+        "vpn":     ["VLESS", "Xray", "3x-ui", "MTProto Fake-TLS"],
+        "pay":     ["YooKassa", "Telegram Stars", "CryptoBot"],
     }
     learning    = ["Distributed Systems", "Kubernetes", "LLM Agents at scale"]
     fun_fact    = "разворачиваю прод быстрее, чем варится макарон"
@@ -97,9 +103,9 @@ class Ivan:
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg" width="48" /><br>Cloudflare</td>
   </tr>
   <tr>
-    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yandex/yandex-original.svg" width="48" /><br>Yandex&nbsp;Cloud</td>
-    <td align="center" width="96"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Logo_Timeweb.svg/512px-Logo_Timeweb.svg.png" width="48" /><br>Timeweb</td>
-    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" width="48" /><br>VPS</td>
+    <td align="center" width="96"><img src="https://api.iconify.design/simple-icons:yandexcloud.svg?color=%235282FF&width=48&height=48" width="48" /><br>Yandex&nbsp;Cloud</td>
+    <td align="center" width="96"><img src="https://api.iconify.design/mdi:cloud.svg?color=%231A55E0&width=48&height=48" width="48" /><br>Timeweb</td>
+    <td align="center" width="96"><img src="https://api.iconify.design/mdi:server.svg?color=%2300ADD8&width=48&height=48" width="48" /><br>VPS</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/prometheus/prometheus-original.svg" width="48" /><br>Prometheus</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" width="48" /><br>Postman</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/notion/notion-original.svg" width="48" /><br>Notion</td>
@@ -120,8 +126,12 @@ class Ivan:
   <img src="https://img.shields.io/badge/Anthropic-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
   <img src="https://img.shields.io/badge/Claude%20Code-CC785C?style=for-the-badge&logo=anthropic&logoColor=white" />
   <img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" />
+  <img src="https://img.shields.io/badge/Whisper-412991?style=for-the-badge&logo=openai&logoColor=white" />
   <img src="https://img.shields.io/badge/ComfyUI-8E44AD?style=for-the-badge&logo=stablediffusion&logoColor=white" />
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" />
+  <img src="https://img.shields.io/badge/browser--use-1F2937?style=for-the-badge&logo=googlechrome&logoColor=white" />
   <img src="https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
 </p>
@@ -138,20 +148,50 @@ class Ivan:
   <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
 </p>
 
-### Backend & API
+### Python Backend
 
 <p>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/Gunicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white" />
   <img src="https://img.shields.io/badge/Uvicorn-2C5BB4?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/aiogram-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" />
+  <img src="https://img.shields.io/badge/Telethon-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Local%20Bot%20API-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
   <img src="https://img.shields.io/badge/aiohttp-2C5BB4?style=for-the-badge&logo=aiohttp&logoColor=white" />
+  <img src="https://img.shields.io/badge/httpx-005CFE?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white" />
   <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white" />
   <img src="https://img.shields.io/badge/Alembic-1F425F?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Strapi-4945FF?style=for-the-badge&logo=strapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/APScheduler-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white" />
+  <img src="https://img.shields.io/badge/Strapi-4945FF?style=for-the-badge&logo=strapi&logoColor=white" />
+</p>
+
+### Go Backend
+
+<p>
+  <img src="https://img.shields.io/badge/Gin-008ECF?style=for-the-badge&logo=gin&logoColor=white" />
+  <img src="https://img.shields.io/badge/Echo-4291B5?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/Fiber-00ACD7?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/GORM-00ACD7?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/sqlx-336791?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/gRPC-244c5a?style=for-the-badge&logo=grpc&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cobra-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/Viper-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+</p>
+
+### Python Tooling
+
+<p>
+  <img src="https://img.shields.io/badge/uv-DE5FE9?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Poetry-60A5FA?style=for-the-badge&logo=poetry&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=black" />
+  <img src="https://img.shields.io/badge/mypy-2A6DB2?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/pyright-FFD43B?style=for-the-badge&logo=python&logoColor=black" />
+  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" />
+  <img src="https://img.shields.io/badge/pre--commit-FAB040?style=for-the-badge&logo=precommit&logoColor=black" />
+  <img src="https://img.shields.io/badge/loguru-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/typer-0096FF?style=for-the-badge&logo=python&logoColor=white" />
 </p>
 
 ### Frontend & Mini Apps
@@ -163,9 +203,28 @@ class Ivan:
   <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Quasar-1976D2?style=for-the-badge&logo=quasar&logoColor=white" />
   <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" />
   <img src="https://img.shields.io/badge/Telegram%20Mini%20Apps-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
   <img src="https://img.shields.io/badge/Pinia-FFD43B?style=for-the-badge&logo=pinia&logoColor=black" />
+</p>
+
+### Mobile · Swift
+
+<p>
   <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/SwiftUI-0088CC?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/Live%20Activities-1575F9?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vapor-0D0D0D?style=for-the-badge&logo=vapor&logoColor=white" />
+  <img src="https://img.shields.io/badge/Combine-FF6F00?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/Xcode-1575F9?style=for-the-badge&logo=xcode&logoColor=white" />
+</p>
+
+### Payments
+
+<p>
+  <img src="https://img.shields.io/badge/YooKassa-7B6FE6?style=for-the-badge&logo=yandex&logoColor=white" />
+  <img src="https://img.shields.io/badge/Telegram%20Stars-FFD700?style=for-the-badge&logo=telegram&logoColor=black" />
+  <img src="https://img.shields.io/badge/CryptoBot-2AABEE?style=for-the-badge&logo=bitcoin&logoColor=white" />
 </p>
 
 ### Data & Storage
@@ -199,19 +258,29 @@ class Ivan:
   <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" />
 </p>
 
-### DevOps · Observability · Logs
+### DevOps · Infra-as-Code
 
 <p>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" />
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
   <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+</p>
+
+### Observability · Logs · Streaming
+
+<p>
   <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" />
+  <img src="https://img.shields.io/badge/Loki-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
   <img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white" />
   <img src="https://img.shields.io/badge/Logstash-FEC514?style=for-the-badge&logo=logstash&logoColor=black" />
   <img src="https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" />
+  <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" />
 </p>
 
 ### Tools & IDE
