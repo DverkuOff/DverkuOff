@@ -212,15 +212,16 @@
     gap: 20px;
   }
   .avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    object-position: center top;
     display: block;
+    border-radius: 16px;
+    background: oklch(95% 0.022 65);
     box-shadow:
-      0 4px 14px oklch(15% 0.005 50 / 0.18),
-      0 0 0 3px var(--surface),
-      0 0 0 4px color-mix(in oklab, var(--accent) 35%, transparent);
+      0 14px 32px -10px oklch(15% 0.005 50 / 0.18),
+      0 0 0 1px var(--border);
   }
   .now-block .now-label {
     font-family: var(--font-mono);
@@ -1048,7 +1049,7 @@
       </div>
 
       <aside class="hero-card">
-        <img class="avatar" src="avatar.webp" alt="Ivan · DverkuOff" loading="eager" />
+        <img class="avatar" src="avatar.png" alt="Ivan · DverkuOff" loading="eager" />
         <div class="now-block">
           <div class="now-label">Сейчас</div>
           <ul class="now-list">
