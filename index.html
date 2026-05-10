@@ -828,6 +828,61 @@
     font-size: 12px;
   }
 
+  /* thumb-8: стек бэкапов с активным consumer */
+  .thumb-8 {
+    background:
+      radial-gradient(circle at 75% 25%, color-mix(in oklab, var(--accent) 10%, transparent), transparent 55%),
+      oklch(95% 0.022 65);
+  }
+  .thumb-8 .snap-stack {
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .thumb-8 .snap-stack .row {
+    display: grid;
+    grid-template-columns: 14px 1fr auto;
+    gap: 8px;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 5px;
+    padding: 6px 9px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--fg-soft);
+    letter-spacing: -0.02em;
+    box-shadow: 0 1px 0 oklch(15% 0.005 50 / 0.04);
+  }
+  .thumb-8 .snap-stack .row .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: oklch(70% 0.13 145);
+    box-shadow: 0 0 0 3px color-mix(in oklab, oklch(70% 0.13 145) 22%, transparent);
+    margin: 0 4px;
+    flex-shrink: 0;
+  }
+  .thumb-8 .snap-stack .row .sz {
+    color: var(--muted);
+    font-size: 8px;
+  }
+  .thumb-8 .snap-stack .row.active {
+    background: color-mix(in oklab, var(--accent) 7%, var(--surface));
+    border-color: color-mix(in oklab, var(--accent) 35%, var(--border-strong));
+  }
+  .thumb-8 .snap-stack .row.active .dot {
+    background: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 28%, transparent);
+    animation: snap-pulse 1.6s ease-in-out infinite;
+  }
+  .thumb-8 .snap-stack .row.active .lbl { color: var(--accent-ink); }
+  @keyframes snap-pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%      { transform: scale(1.4); opacity: 0.65; }
+  }
+
   .project-meta {
     display: flex;
     gap: 14px;
@@ -1427,6 +1482,33 @@
         </p>
         <div class="stack">
           <span>aiogram</span><span>Telethon</span><span>RabbitMQ</span><span>Go</span><span>MongoDB</span><span>YooKassa</span>
+        </div>
+      </a>
+
+      <a class="project" href="#contact">
+        <div class="project-thumb thumb-8" aria-hidden="true">
+          <div class="snap-stack">
+            <div class="row"><span class="dot"></span><span class="lbl">snap-0245.tar.gz</span><span class="sz">1.2 GB</span></div>
+            <div class="row"><span class="dot"></span><span class="lbl">snap-0244.tar.gz</span><span class="sz">980 MB</span></div>
+            <div class="row active"><span class="dot"></span><span class="lbl">snap-0243.tar.gz</span><span class="sz">1.4 GB · 67%</span></div>
+            <div class="row"><span class="dot"></span><span class="lbl">snap-0242.tar.gz</span><span class="sz">1.1 GB</span></div>
+            <div class="row"><span class="dot"></span><span class="lbl">snap-0241.tar.gz</span><span class="sz">2.3 GB</span></div>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="year">2024—2025</span>
+          <span>DevOps · Async Python</span>
+        </div>
+        <h3 class="project-title">BackupX — асинхронная система бэкапов</h3>
+        <p class="project-desc">
+          RabbitMQ-консьюмер для распределённого резервного
+          копирования: asyncio + aio-pika, гарантия доставки через
+          ack/retry, метрики в Prometheus, алерты в Telegram.
+          Бэкенд-агност: подключается к любой системе через message
+          queue, обрабатывает гигабайты снапшотов параллельно.
+        </p>
+        <div class="stack">
+          <span>Python 3.12</span><span>asyncio</span><span>RabbitMQ</span><span>Prometheus</span><span>aio-pika</span>
         </div>
       </a>
 
