@@ -5,7 +5,7 @@
   <h1>Ivan&nbsp;·&nbsp;<i>DverkuOff</i></h1>
 
   <p>
-    <i>AI Automation Engineer&nbsp;·&nbsp;Telegram-боты&nbsp;·&nbsp;VPN&nbsp;·&nbsp;Backend</i>
+    <i>AI Automation Engineer&nbsp;·&nbsp;Telegram-боты&nbsp;·&nbsp;VPN&nbsp;·&nbsp;Backend&nbsp;·&nbsp;DevOps</i>
   </p>
 
   <p>
@@ -54,10 +54,8 @@
   <img src="https://img.shields.io/badge/Ollama-EEE6D3?style=flat-square&logo=ollama&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/Whisper-EEE6D3?style=flat-square&logo=openai&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/ComfyUI-EEE6D3?style=flat-square&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/LangChain-EEE6D3?style=flat-square&logo=langchain&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/pgvector-EEE6D3?style=flat-square&logo=postgresql&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Playwright-EEE6D3?style=flat-square&logo=playwright&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/browser--use-EEE6D3?style=flat-square&logoColor=C46A52" />
+  <img src="https://img.shields.io/badge/HuggingFace-EEE6D3?style=flat-square&logo=huggingface&logoColor=C46A52" />
 </p>
 
 #### AI Coding · Design
@@ -67,10 +65,8 @@
   <img src="https://img.shields.io/badge/Ruflo-C46A52?style=flat-square&logo=anthropic&logoColor=FBF6EC" />
   <img src="https://img.shields.io/badge/Cursor-EEE6D3?style=flat-square&logo=cursor&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/OpenDesign-EEE6D3?style=flat-square&logo=figma&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/v0-EEE6D3?style=flat-square&logo=vercel&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/bolt.new-EEE6D3?style=flat-square&logo=stackblitz&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Lovable-EEE6D3?style=flat-square&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Aider-EEE6D3?style=flat-square&logo=git&logoColor=C46A52" />
+  <img src="https://img.shields.io/badge/Copilot-EEE6D3?style=flat-square&logo=githubcopilot&logoColor=C46A52" />
+  <img src="https://img.shields.io/badge/Figma-EEE6D3?style=flat-square&logo=figma&logoColor=C46A52" />
 </p>
 
 #### Backend · Telegram
@@ -94,12 +90,11 @@
   <img src="https://img.shields.io/badge/Next.js-EEE6D3?style=flat-square&logo=nextdotjs&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/React-EEE6D3?style=flat-square&logo=react&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/Vite-EEE6D3?style=flat-square&logo=vite&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Quasar-EEE6D3?style=flat-square&logo=quasar&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/Tailwind-EEE6D3?style=flat-square&logo=tailwindcss&logoColor=C46A52" />
+  <img src="https://img.shields.io/badge/shadcn%2Fui-EEE6D3?style=flat-square&logo=shadcnui&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/Swift-EEE6D3?style=flat-square&logo=swift&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/SwiftUI-EEE6D3?style=flat-square&logo=swift&logoColor=C46A52" />
   <img src="https://img.shields.io/badge/Live%20Activities-EEE6D3?style=flat-square&logo=apple&logoColor=C46A52" />
-  <img src="https://img.shields.io/badge/Vapor-EEE6D3?style=flat-square&logo=vapor&logoColor=C46A52" />
 </p>
 
 #### VPN · Proxy
@@ -158,7 +153,7 @@
 | `2025` | **MIRÉA-хак — OCR** | Хакатонный MVP: оцифровка паспортов оборудования через PaddleOCR + OpenCV, классификация документов, экспорт в XLSX/JSON. | PaddleOCR · OpenCV · FastAPI · React |
 | `2025` | **oticon-infra** | Полный IaC-стек на Timeweb Cloud: Terraform поднимает VM, Ansible настраивает SSH-hardening + Traefik с Let's Encrypt. | Terraform · Ansible · Traefik · Docker |
 | `2026` | **UDaily** | Personal-MCP сервер для Claude Desktop: трекинг тренировок, рациона, метрик. Streamable HTTP, FastMCP, SQLite WAL. | MCP SDK · FastMCP · SQLite |
-| `2026` | **iOS Live Activities** | Native SwiftUI с Live Activities на Lock Screen и Dynamic Island. Combine + Vapor для сервер-сайда. | SwiftUI · Live Activities · Combine · Vapor |
+| `2026` | **iOS Live Activities** | Native SwiftUI с Live Activities на Lock Screen и Dynamic Island. Combine для реактивщины. | SwiftUI · Live Activities · Combine |
 
 > Полная версия с превьюшками — [dverkuoff.github.io](https://dverkuoff.github.io/DverkuOff/).
 
@@ -169,10 +164,6 @@
 <p align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=DverkuOff&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=FBF6EC&title_color=8C3A2C&text_color=2C2A26&icon_color=C46A52&ring_color=C46A52" />
   <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=DverkuOff&hide_border=true&background=FBF6EC&stroke=EEE6D3&ring=C46A52&fire=C46A52&currStreakNum=2C2A26&currStreakLabel=8C3A2C&sideNums=2C2A26&sideLabels=8C3A2C&dates=8B8378" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DverkuOff&hide_border=true&area=true&radius=8&bg_color=FBF6EC&color=2C2A26&line=C46A52&point=8C3A2C&custom_title=Активность%20за%20последний%20год" />
 </p>
 
 <p align="center">
