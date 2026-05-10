@@ -566,60 +566,14 @@
   }
   .iphone-island {
     position: absolute;
-    top: 8px;
+    top: 7px;
     left: 50%;
     transform: translateX(-50%);
-    width: 76%;
-    min-height: 32px;
+    width: 32%;
+    height: 14px;
     background: #000;
-    border-radius: 18px;
+    border-radius: 999px;
     z-index: 3;
-    display: flex;
-    align-items: center;
-    padding: 5px 9px;
-    gap: 7px;
-    box-shadow: 0 4px 14px oklch(0% 0 0 / 0.25);
-  }
-  .iphone-island .li-icon {
-    width: 22px;
-    height: 22px;
-    border-radius: 6px;
-    background: var(--accent);
-    display: grid;
-    place-items: center;
-    color: white;
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 600;
-    flex-shrink: 0;
-  }
-  .iphone-island .li-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    flex: 1;
-    min-width: 0;
-    line-height: 1.2;
-  }
-  .iphone-island .li-meta b {
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 8.5px;
-    color: white;
-    letter-spacing: -0.005em;
-  }
-  .iphone-island .li-meta span {
-    color: oklch(70% 0.018 50);
-    font-size: 7px;
-  }
-  .iphone-island .li-stat {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    color: oklch(82% 0.12 28);
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    flex-shrink: 0;
   }
   .iphone-time {
     position: absolute;
@@ -655,9 +609,53 @@
     background: white;
     margin-left: 2px;
   }
-  /* status bar — time/bars repositioned to sides of expanded island */
-  .iphone-time { z-index: 4; }
-  .iphone-bars { z-index: 4; }
+  .iphone-live {
+    position: absolute;
+    top: 32px;
+    left: 6%;
+    right: 6%;
+    background: oklch(99% 0.004 70 / 0.96);
+    border-radius: 14px;
+    padding: 8px 10px;
+    display: grid;
+    grid-template-columns: 22px 1fr auto;
+    gap: 8px;
+    align-items: center;
+    font-family: var(--font-body);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 14px oklch(15% 0.005 50 / 0.18);
+  }
+  .iphone-live .icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    background: var(--accent);
+    display: grid;
+    place-items: center;
+    color: white;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .iphone-live .meta { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+  .iphone-live .meta b {
+    font-weight: 600;
+    font-size: 9px;
+    color: oklch(22% 0.02 50);
+    letter-spacing: -0.005em;
+  }
+  .iphone-live .meta span {
+    color: oklch(50% 0.018 50);
+    font-size: 8px;
+  }
+  .iphone-live .stat {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent-ink);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
   .iphone-dock {
     position: absolute;
     bottom: 10px;
@@ -1200,13 +1198,14 @@
             <div class="iphone-screen">
               <span class="iphone-time">9:41</span>
               <div class="iphone-bars"><i></i><i></i><i></i><i></i></div>
-              <div class="iphone-island">
-                <div class="li-icon">A</div>
-                <div class="li-meta">
-                  <b>Поезд</b>
-                  <span>прибытие 12 мин</span>
+              <div class="iphone-island"></div>
+              <div class="iphone-live">
+                <div class="icon">A</div>
+                <div class="meta">
+                  <b>Live Activity</b>
+                  <span>Поезд · 12 мин</span>
                 </div>
-                <div class="li-stat">→</div>
+                <div class="stat">→</div>
               </div>
               <div class="iphone-apps"><i></i><i></i><i></i><i></i></div>
               <div class="iphone-dock"></div>
