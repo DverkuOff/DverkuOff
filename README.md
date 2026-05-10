@@ -8,7 +8,7 @@
 <!-- TYPING ANIMATION -->
 <p align="center">
   <a href="https://github.com/DverkuOff">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2600&pause=700&color=5BCEFA&center=true&vCenter=true&multiline=false&width=820&lines=AI+Automation+%E2%80%A2+n8n+%E2%80%A2+OpenRouter+%E2%80%A2+ComfyUI;Python+%E2%80%A2+Go+%E2%80%A2+Swift+%E2%80%A2+TypeScript;aiogram+%E2%80%A2+FastAPI+%E2%80%A2+Local+Bot+API;Next.js+%E2%80%A2+React+%E2%80%A2+Quasar+%E2%80%A2+Vite;PostgreSQL+%E2%80%A2+Supabase+%E2%80%A2+pgvector+%E2%80%A2+Redis;Docker+%E2%80%A2+Grafana+%E2%80%A2+ELK+%E2%80%A2+CI%2FCD;VLESS+%E2%80%A2+3x-ui+%E2%80%A2+MTProto+Fake-TLS;%C2%ABship+it+now%2C+optimize+later%C2%BB" alt="typing" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2600&pause=700&color=5BCEFA&center=true&vCenter=true&multiline=false&width=860&lines=AI+Automation+%E2%80%A2+n8n+%E2%80%A2+OpenRouter+%E2%80%A2+ComfyUI;Claude+Code+%E2%80%A2+Ruflo+%E2%80%A2+Cursor+%E2%80%A2+OpenDesign;Python+%E2%80%A2+Go+%E2%80%A2+Swift+%E2%80%A2+TypeScript;aiogram+%E2%80%A2+FastAPI+%E2%80%A2+Local+Bot+API;PostgreSQL+%E2%80%A2+Supabase+%E2%80%A2+pgvector+%E2%80%A2+Redis;Docker+%E2%80%A2+Grafana+%E2%80%A2+ELK+%E2%80%A2+Loki;VLESS+%E2%80%A2+3x-ui+%E2%80%A2+MTProto+Fake-TLS;AI+writes+the+code+%E2%80%94+I+architect+the+system" alt="typing" />
   </a>
 </p>
 
@@ -39,6 +39,8 @@ class Ivan:
     stack       = {
         "ai":      ["OpenRouter", "Anthropic", "OpenAI", "Ollama", "Whisper",
                     "ComfyUI", "n8n", "MCP", "Playwright", "browser-use"],
+        "ai_dev":  ["Claude Code", "Ruflo", "Cursor", "OpenDesign",
+                    "v0", "bolt.new", "Lovable", "Aider", "Copilot"],
         "py":      ["FastAPI", "aiogram", "Telethon", "Gunicorn", "SQLAlchemy",
                     "uv", "Poetry", "ruff", "pytest", "httpx", "APScheduler"],
         "go":      ["Gin", "GORM", "sqlx", "gRPC", "Cobra", "Viper"],
@@ -117,14 +119,13 @@ class Ivan:
 <summary><b>📦 Развернуть полный список технологий</b></summary>
 <br>
 
-### AI Automation & LLM
+### AI Automation & Pipelines
 
 <p>
   <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenRouter-6466F1?style=for-the-badge&logo=openai&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
   <img src="https://img.shields.io/badge/Anthropic-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
-  <img src="https://img.shields.io/badge/Claude%20Code-CC785C?style=for-the-badge&logo=anthropic&logoColor=white" />
   <img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=anthropic&logoColor=white" />
   <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" />
   <img src="https://img.shields.io/badge/Whisper-412991?style=for-the-badge&logo=openai&logoColor=white" />
@@ -134,6 +135,20 @@ class Ivan:
   <img src="https://img.shields.io/badge/browser--use-1F2937?style=for-the-badge&logo=googlechrome&logoColor=white" />
   <img src="https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+</p>
+
+### AI Coding & Design
+
+<p>
+  <img src="https://img.shields.io/badge/Claude%20Code-CC785C?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ruflo-CC785C?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenDesign-FF4785?style=for-the-badge&logo=figma&logoColor=white" />
+  <img src="https://img.shields.io/badge/v0-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/bolt.new-1389FD?style=for-the-badge&logo=stackblitz&logoColor=white" />
+  <img src="https://img.shields.io/badge/Lovable-FF6B9D?style=for-the-badge&logo=heart&logoColor=white" />
+  <img src="https://img.shields.io/badge/Aider-1F2937?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub%20Copilot-181717?style=for-the-badge&logo=githubcopilot&logoColor=white" />
 </p>
 
 ### Языки
@@ -304,6 +319,7 @@ class Ivan:
 | Направление | Стек |
 |---|---|
 | **AI Automation** *(основное)* | n8n · OpenRouter · ComfyUI · Anthropic · OpenAI · MCP-серверы · pgvector / RAG |
+| **AI-driven dev** | **Claude Code** · **Ruflo** · Cursor · **OpenDesign** · v0 · bolt.new · Lovable |
 | **Telegram-боты** | aiogram 3 · **Local Bot API** · FastAPI · SQLAlchemy · Alembic · Redis |
 | **VPN / VLESS / 3x-ui** | Xray-core · Reality · **MTProto Fake-TLS** · панель · бот-продажник · payments · mini-app |
 | **Backend & API** | FastAPI · Gunicorn · Go · асинхронные сервисы · миграции · фоновые задачи |
