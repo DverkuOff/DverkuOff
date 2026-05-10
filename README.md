@@ -102,7 +102,7 @@
 <tr>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/mirea.svg?v=2" width="100%" alt="MIRÉA OCR" />
+      <img src="assets/projects/mirea.svg?v=3" width="100%" alt="MIRÉA OCR" />
     </a>
     <br><br>
     <b>МИРЭА — оцифровка паспортов</b>&nbsp;·&nbsp;<code>2025</code>&nbsp;·&nbsp;<i>ML · OCR</i><br><br>
