@@ -2,13 +2,13 @@
 <!--             ANIMATED HEADER BANNER            -->
 <!-- ============================================ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=260&section=header&text=Ivan%20%E2%80%A2%20DverkuOff&fontSize=64&fontColor=ffffff&fontAlignY=36&desc=Backend%20Engineer%20%E2%80%A2%20Telegram%20Bots%20%E2%80%A2%20AI%2FLLM%20%E2%80%A2%20DevOps&descAlignY=58&descSize=18&animation=twinkling" alt="header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=260&section=header&text=Ivan%20%E2%80%A2%20DverkuOff&fontSize=64&fontColor=ffffff&fontAlignY=36&desc=AI%20Automation%20%E2%80%A2%20Telegram%20Bots%20%E2%80%A2%20Backend%20%E2%80%A2%20DevOps&descAlignY=58&descSize=18&animation=twinkling" alt="header" />
 </p>
 
 <!-- TYPING ANIMATION -->
 <p align="center">
   <a href="https://github.com/DverkuOff">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2600&pause=700&color=5BCEFA&center=true&vCenter=true&multiline=false&width=760&lines=Python+%E2%80%A2+aiogram+%E2%80%A2+FastAPI;TypeScript+%E2%80%A2+React+%E2%80%A2+Vite+%E2%80%A2+Quasar;Docker+%E2%80%A2+PostgreSQL+%E2%80%A2+Redis+%E2%80%A2+pgvector;LLM+agents+%E2%80%A2+MCP+servers+%E2%80%A2+RAG+pipelines;VPN+%2F+VLESS+%E2%80%A2+Telegram+Mini+Apps+%E2%80%A2+CI%2FCD;%C2%ABship+it+now%2C+optimize+later%C2%BB" alt="typing" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2600&pause=700&color=5BCEFA&center=true&vCenter=true&multiline=false&width=820&lines=AI+Automation+%E2%80%A2+n8n+%E2%80%A2+OpenRouter+%E2%80%A2+ComfyUI;Python+%E2%80%A2+Go+%E2%80%A2+Swift+%E2%80%A2+TypeScript;aiogram+%E2%80%A2+FastAPI+%E2%80%A2+Local+Bot+API;Next.js+%E2%80%A2+React+%E2%80%A2+Quasar+%E2%80%A2+Vite;PostgreSQL+%E2%80%A2+Supabase+%E2%80%A2+pgvector+%E2%80%A2+Redis;Docker+%E2%80%A2+Grafana+%E2%80%A2+ELK+%E2%80%A2+CI%2FCD;VLESS+%E2%80%A2+3x-ui+%E2%80%A2+MTProto+Fake-TLS;%C2%ABship+it+now%2C+optimize+later%C2%BB" alt="typing" />
   </a>
 </p>
 
@@ -20,11 +20,6 @@
   <img src="https://img.shields.io/badge/OPEN%20TO-collaboration-F5A9B8?style=for-the-badge&labelColor=1a1b27" alt="open to" />
 </p>
 
-<!-- DAILY DEV QUOTE -->
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="dev quote" />
-</p>
-
 <!-- WAVE DIVIDER -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=2" width="100%" alt="divider" />
 
@@ -32,11 +27,24 @@
 
 ```python
 class Ivan:
-    role        = "Backend Engineer"
+    role        = "AI Automation Engineer"
     location    = "Russia"
-    languages   = ["Python", "TypeScript", "JavaScript", "SQL", "Bash"]
-    focus       = ["Telegram Bots", "VPN / VLESS", "AI Agents", "Mini Apps"]
-    learning    = ["Distributed Systems", "Kubernetes", "LLM Pipelines"]
+    languages   = ["Python", "Go", "Swift", "TypeScript", "JavaScript", "SQL", "Bash"]
+    focus       = [
+        "AI Automation",          # n8n, OpenRouter, ComfyUI, MCP-агенты
+        "Telegram Bots",          # aiogram + Local Bot API
+        "VPN / VLESS / 3x-ui",    # MTProto Fake-TLS, обход блокировок
+        "Mini Apps & Backend",    # FastAPI, Next.js, React, Quasar
+    ]
+    stack       = {
+        "ai":     ["OpenRouter", "Anthropic", "OpenAI", "ComfyUI", "n8n", "MCP"],
+        "back":   ["FastAPI", "aiogram", "Gunicorn", "SQLAlchemy", "Go"],
+        "front":  ["Next.js", "React", "Quasar", "Tailwind", "Swift"],
+        "data":   ["Postgres", "Supabase", "pgvector", "Redis", "MongoDB"],
+        "infra":  ["Docker", "Grafana", "ELK", "Nginx", "Cloudflare"],
+        "vpn":    ["VLESS", "Xray", "3x-ui", "MTProto Fake-TLS"],
+    }
+    learning    = ["Distributed Systems", "Kubernetes", "LLM Agents at scale"]
     fun_fact    = "разворачиваю прод быстрее, чем варится макарон"
 
     def life(self) -> str:
@@ -53,21 +61,39 @@ class Ivan:
 <table align="center">
   <tr>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="48" /><br>Python</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" width="48" /><br>Go</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" width="48" /><br>Swift</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="48" /><br>TypeScript</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="48" /><br>JavaScript</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" width="48" /><br>Bash</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="48" /><br>SQL</td>
+  </tr>
+  <tr>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" width="48" /><br>FastAPI</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" width="48" /><br>Next.js</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="48" /><br>React</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" width="48" /><br>Vue</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" width="48" /><br>Vite</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" width="48" /><br>Tailwind</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" width="48" /><br>Figma</td>
   </tr>
   <tr>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="48" /><br>Postgres</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg" width="48" /><br>Supabase</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" width="48" /><br>Redis</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="48" /><br>MongoDB</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="48" /><br>Docker</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" width="48" /><br>Nginx</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/grafana/grafana-original.svg" width="48" /><br>Grafana</td>
+  </tr>
+  <tr>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/elasticsearch/elasticsearch-original.svg" width="48" /><br>Elastic</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kibana/kibana-original.svg" width="48" /><br>Kibana</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rabbitmq/rabbitmq-original.svg" width="48" /><br>RabbitMQ</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="48" /><br>Linux</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="48" /><br>Git</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="48" /><br>GitHub</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg" width="48" /><br>Cloudflare</td>
   </tr>
 </table>
 
@@ -75,23 +101,53 @@ class Ivan:
 <summary><b>📦 Развернуть полный список технологий</b></summary>
 <br>
 
+### AI Automation & LLM
+
+<p>
+  <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenRouter-6466F1?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Anthropic-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/Claude%20Code-CC785C?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/ComfyUI-8E44AD?style=for-the-badge&logo=stablediffusion&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+</p>
+
+### Языки
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
+</p>
+
 ### Backend & API
 
 <p>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Gunicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Uvicorn-2C5BB4?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/aiogram-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" />
+  <img src="https://img.shields.io/badge/Local%20Bot%20API-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
   <img src="https://img.shields.io/badge/aiohttp-2C5BB4?style=for-the-badge&logo=aiohttp&logoColor=white" />
   <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white" />
   <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white" />
   <img src="https://img.shields.io/badge/Alembic-1F425F?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Strapi-4945FF?style=for-the-badge&logo=strapi&logoColor=white" />
   <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white" />
-  <img src="https://img.shields.io/badge/Uvicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white" />
 </p>
 
 ### Frontend & Mini Apps
 
 <p>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" />
@@ -99,22 +155,32 @@ class Ivan:
   <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
   <img src="https://img.shields.io/badge/Telegram%20Mini%20Apps-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
   <img src="https://img.shields.io/badge/Pinia-FFD43B?style=for-the-badge&logo=pinia&logoColor=black" />
+  <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" />
 </p>
 
-### AI / LLM
+### Data & Storage
 
 <p>
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Anthropic-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
-  <img src="https://img.shields.io/badge/Claude%20Code-CC785C?style=for-the-badge&logo=anthropic&logoColor=white" />
-  <img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=anthropic&logoColor=white" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
-  <img src="https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" />
-  <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" />
+  <img src="https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
 </p>
 
-### DevOps & Infra
+### VPN / Proxy / Anti-block
+
+<p>
+  <img src="https://img.shields.io/badge/VLESS-1E1E2E?style=for-the-badge&logo=wireguard&logoColor=white" />
+  <img src="https://img.shields.io/badge/Xray--core-2A2A2A?style=for-the-badge&logo=v&logoColor=white" />
+  <img src="https://img.shields.io/badge/3x--ui-1F2937?style=for-the-badge&logo=traefikproxy&logoColor=white" />
+  <img src="https://img.shields.io/badge/MTProto%20Fake--TLS-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
+  <img src="https://img.shields.io/badge/Reality-E5484D?style=for-the-badge&logo=protondb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" />
+</p>
+
+### DevOps · Observability · Logs
 
 <p>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
@@ -122,11 +188,11 @@ class Ivan:
   <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" />
-  <img src="https://img.shields.io/badge/VLESS%20%2F%20Xray-1E1E2E?style=for-the-badge&logo=wireguard&logoColor=white" />
-  <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" />
-  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" />
   <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" />
+  <img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white" />
+  <img src="https://img.shields.io/badge/Logstash-FEC514?style=for-the-badge&logo=logstash&logoColor=black" />
+  <img src="https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white" />
 </p>
 
 ### Tools & IDE
@@ -137,6 +203,7 @@ class Ivan:
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
   <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" />
   <img src="https://img.shields.io/badge/PyCharm-21D789?style=for-the-badge&logo=pycharm&logoColor=white" />
+  <img src="https://img.shields.io/badge/Xcode-1575F9?style=for-the-badge&logo=xcode&logoColor=white" />
   <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
   <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" />
@@ -150,12 +217,12 @@ class Ivan:
 
 | Направление | Стек |
 |---|---|
-| **Telegram-боты** | aiogram 3 · FastAPI · SQLAlchemy · Alembic · Redis |
-| **VPN / VLESS** | Полный стек: панель · бот-продажник · consumer · payments · mini-app |
-| **AI / LLM** | OpenAI · Anthropic · RAG на pgvector · агенты · MCP-серверы |
-| **REST API** | FastAPI · асинхронные сервисы · миграции · фоновые задачи |
-| **Mini Apps** | React 19 · Vite · Telegram WebApp SDK · Quasar |
-| **DevOps** | Docker Compose · GitHub Actions · VPS под Linux · Nginx · Cloudflare |
+| **AI Automation** *(основное)* | n8n · OpenRouter · ComfyUI · Anthropic · OpenAI · MCP-серверы · pgvector / RAG |
+| **Telegram-боты** | aiogram 3 · **Local Bot API** · FastAPI · SQLAlchemy · Alembic · Redis |
+| **VPN / VLESS / 3x-ui** | Xray-core · Reality · **MTProto Fake-TLS** · панель · бот-продажник · payments · mini-app |
+| **Backend & API** | FastAPI · Gunicorn · Go · асинхронные сервисы · миграции · фоновые задачи |
+| **Mini Apps & Frontend** | Next.js · React 19 · Vite · Quasar · Swift · Telegram WebApp SDK |
+| **DevOps & Observability** | Docker Compose · GitHub Actions · Nginx · Cloudflare · **Grafana + ELK** |
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=2" width="100%" alt="divider" />
 
