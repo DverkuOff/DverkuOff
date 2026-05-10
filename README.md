@@ -42,6 +42,7 @@ class Ivan:
         "front":  ["Next.js", "React", "Quasar", "Tailwind", "Swift"],
         "data":   ["Postgres", "Supabase", "pgvector", "Redis", "MongoDB"],
         "infra":  ["Docker", "Grafana", "ELK", "Nginx", "Cloudflare"],
+        "cloud":  ["Yandex Cloud", "Timeweb Cloud", "VPS / bare-metal"],
         "vpn":    ["VLESS", "Xray", "3x-ui", "MTProto Fake-TLS"],
     }
     learning    = ["Distributed Systems", "Kubernetes", "LLM Agents at scale"]
@@ -94,6 +95,15 @@ class Ivan:
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="48" /><br>Git</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="48" /><br>GitHub</td>
     <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg" width="48" /><br>Cloudflare</td>
+  </tr>
+  <tr>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yandex/yandex-original.svg" width="48" /><br>Yandex&nbsp;Cloud</td>
+    <td align="center" width="96"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Logo_Timeweb.svg/512px-Logo_Timeweb.svg.png" width="48" /><br>Timeweb</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" width="48" /><br>VPS</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/prometheus/prometheus-original.svg" width="48" /><br>Prometheus</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" width="48" /><br>Postman</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/notion/notion-original.svg" width="48" /><br>Notion</td>
+    <td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xcode/xcode-original.svg" width="48" /><br>Xcode</td>
   </tr>
 </table>
 
@@ -169,6 +179,15 @@ class Ivan:
   <img src="https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
 </p>
 
+### Cloud & Hosting
+
+<p>
+  <img src="https://img.shields.io/badge/Yandex%20Cloud-5282FF?style=for-the-badge&logo=yandexcloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/Timeweb%20Cloud-1A55E0?style=for-the-badge&logo=icloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/VPS%20%2F%20bare--metal-1F2937?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" />
+</p>
+
 ### VPN / Proxy / Anti-block
 
 <p>
@@ -223,6 +242,7 @@ class Ivan:
 | **Backend & API** | FastAPI · Gunicorn · Go · асинхронные сервисы · миграции · фоновые задачи |
 | **Mini Apps & Frontend** | Next.js · React 19 · Vite · Quasar · Swift · Telegram WebApp SDK |
 | **DevOps & Observability** | Docker Compose · GitHub Actions · Nginx · Cloudflare · **Grafana + ELK** |
+| **Cloud & Hosting** | **Yandex Cloud** · **Timeweb Cloud** · VPS / bare-metal · Cloudflare |
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=2" width="100%" alt="divider" />
 
