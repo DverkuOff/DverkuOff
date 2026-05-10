@@ -47,7 +47,7 @@
 ## **02**&nbsp;&nbsp;/&nbsp;&nbsp;Стек
 
 <p align="center">
-  <img src="assets/stack.svg?v=2" width="100%" alt="Стек: языки, базы данных, инструменты" />
+  <img src="assets/stack.svg?v=3" width="100%" alt="Стек: языки, базы данных, инструменты" />
 </p>
 
 ---
