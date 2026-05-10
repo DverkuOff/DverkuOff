@@ -47,7 +47,7 @@ class Ivan:
         "front":   ["Next.js", "React", "Quasar", "Tailwind", "shadcn/ui"],
         "mobile":  ["Swift", "SwiftUI", "Live Activities", "Vapor"],
         "data":    ["Postgres", "Supabase", "pgvector", "Redis", "MongoDB", "Kafka"],
-        "infra":   ["Docker", "Ansible", "Terraform", "Nginx", "Cloudflare"],
+        "infra":   ["Docker", "Ansible", "Terraform", "Nginx", "Traefik", "Cloudflare"],
         "obs":     ["Grafana", "Prometheus", "Loki", "ELK"],
         "cloud":   ["Yandex Cloud", "Timeweb Cloud", "VPS / bare-metal"],
         "vpn":     ["VLESS", "Xray", "3x-ui", "MTProto Fake-TLS"],
@@ -279,6 +279,7 @@ class Ivan:
   <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" />
   <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
   <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefikproxy&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </p>
