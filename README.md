@@ -9,11 +9,15 @@
   </p>
 
   <p>
-    <a href="https://dverkuoff.github.io/DverkuOff/">dverkuoff.github.io</a>
-    &nbsp;·&nbsp;
+    <a href="https://dverkuoff.github.io/DverkuOff/">
+      <img src="https://img.shields.io/badge/%E2%86%92%20%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8C%20%D1%81%D0%B0%D0%B9%D1%82-dverkuoff.github.io-C46A52?style=for-the-badge&logoColor=FBF6EC&labelColor=8C3A2C" alt="Открыть сайт" />
+    </a>
+  </p>
+
+  <p>
     <a href="https://t.me/DverkuOff">@DverkuOff</a>
     &nbsp;·&nbsp;
-    <a href="mailto:wanna.chill.corp@gmail.com">email</a>
+    <a href="mailto:wanna.chill.corp@gmail.com">wanna.chill.corp@gmail.com</a>
   </p>
 
   <br>
