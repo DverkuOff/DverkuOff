@@ -80,7 +80,7 @@
 <tr>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/isa-bot.svg?v=3" width="100%" alt="ISA-BOT" />
+      <img src="assets/projects/isa-bot.svg?v=4" width="100%" alt="ISA-BOT" />
     </a>
     <br><br>
     <b>ISA-BOT</b>&nbsp;·&nbsp;<code>2024—26</code>&nbsp;·&nbsp;<i>Telegram · Microservices</i><br><br>
