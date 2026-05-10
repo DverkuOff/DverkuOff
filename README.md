@@ -47,7 +47,7 @@
 ## **02**&nbsp;&nbsp;/&nbsp;&nbsp;Стек
 
 <p align="center">
-  <img src="assets/stack.svg" width="100%" alt="Стек: языки, базы данных, инструменты" />
+  <img src="assets/stack.svg?v=2" width="100%" alt="Стек: языки, базы данных, инструменты" />
 </p>
 
 ---
@@ -58,7 +58,7 @@
 <tr>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/quasar.svg" width="100%" alt="Quasar" />
+      <img src="assets/projects/quasar.svg?v=2" width="100%" alt="Quasar" />
     </a>
     <br><br>
     <b>Quasar</b>&nbsp;·&nbsp;<code>2026</code>&nbsp;·&nbsp;<i>AI · B2B</i><br><br>
@@ -68,7 +68,7 @@
   </td>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/vless.svg" width="100%" alt="VLESS платформа" />
+      <img src="assets/projects/vless.svg?v=2" width="100%" alt="VLESS платформа" />
     </a>
     <br><br>
     <b>VPN-платформа на VLESS</b>&nbsp;·&nbsp;<code>2025—26</code>&nbsp;·&nbsp;<i>VPN · Full-stack</i><br><br>
@@ -80,7 +80,7 @@
 <tr>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/isa-bot.svg" width="100%" alt="ISA-BOT" />
+      <img src="assets/projects/isa-bot.svg?v=2" width="100%" alt="ISA-BOT" />
     </a>
     <br><br>
     <b>ISA-BOT</b>&nbsp;·&nbsp;<code>2024—26</code>&nbsp;·&nbsp;<i>Telegram · Microservices</i><br><br>
@@ -90,7 +90,7 @@
   </td>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/backupx.svg" width="100%" alt="BackupX" />
+      <img src="assets/projects/backupx.svg?v=2" width="100%" alt="BackupX" />
     </a>
     <br><br>
     <b>BackupX</b>&nbsp;·&nbsp;<code>2024—25</code>&nbsp;·&nbsp;<i>DevOps · Async Python</i><br><br>
@@ -102,7 +102,7 @@
 <tr>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/mirea.svg" width="100%" alt="MIRÉA OCR" />
+      <img src="assets/projects/mirea.svg?v=2" width="100%" alt="MIRÉA OCR" />
     </a>
     <br><br>
     <b>МИРЭА — оцифровка паспортов</b>&nbsp;·&nbsp;<code>2025</code>&nbsp;·&nbsp;<i>ML · OCR</i><br><br>
@@ -112,7 +112,7 @@
   </td>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/oticon.svg" width="100%" alt="oticon-infra" />
+      <img src="assets/projects/oticon.svg?v=2" width="100%" alt="oticon-infra" />
     </a>
     <br><br>
     <b>oticon-infra</b>&nbsp;·&nbsp;<code>2025</code>&nbsp;·&nbsp;<i>DevOps · IaC</i><br><br>
@@ -124,7 +124,7 @@
 <tr>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/udaily.svg" width="100%" alt="UDaily" />
+      <img src="assets/projects/udaily.svg?v=2" width="100%" alt="UDaily" />
     </a>
     <br><br>
     <b>UDaily</b>&nbsp;·&nbsp;<code>2026</code>&nbsp;·&nbsp;<i>MCP · Personal AI</i><br><br>
@@ -134,7 +134,7 @@
   </td>
   <td width="50%" valign="top">
     <a href="https://dverkuoff.github.io/DverkuOff/#projects">
-      <img src="assets/projects/ios.svg" width="100%" alt="iOS Live Activities" />
+      <img src="assets/projects/ios.svg?v=2" width="100%" alt="iOS Live Activities" />
     </a>
     <br><br>
     <b>iOS Live Activities</b>&nbsp;·&nbsp;<code>2026</code>&nbsp;·&nbsp;<i>iOS · SwiftUI</i><br><br>
