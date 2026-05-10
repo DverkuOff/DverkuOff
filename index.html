@@ -215,15 +215,12 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: radial-gradient(circle at 35% 35%, color-mix(in oklab, var(--accent) 50%, white) 0%, var(--accent) 70%);
-    color: var(--bg);
-    display: grid;
-    place-items: center;
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 32px;
-    font-weight: 500;
-    letter-spacing: -0.02em;
+    object-fit: cover;
+    display: block;
+    box-shadow:
+      0 4px 14px oklch(15% 0.005 50 / 0.18),
+      0 0 0 3px var(--surface),
+      0 0 0 4px color-mix(in oklab, var(--accent) 35%, transparent);
   }
   .now-block .now-label {
     font-family: var(--font-mono);
@@ -1051,7 +1048,7 @@
       </div>
 
       <aside class="hero-card">
-        <div class="avatar" aria-hidden="true">I</div>
+        <img class="avatar" src="avatar.webp" alt="Ivan · DverkuOff" loading="eager" />
         <div class="now-block">
           <div class="now-label">Сейчас</div>
           <ul class="now-list">
