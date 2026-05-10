@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" width="1100" height="720">
+  <rect width="1100" height="720" fill="#FBF6EC" rx="12"/>
+
+  <!-- subtle radial accent -->
+  <defs>
+    <radialGradient id="accentGlow" cx="92%" cy="8%" r="70%">
+      <stop offset="0%" stop-color="#C46A52" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#C46A52" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1100" height="720" fill="url(#accentGlow)" rx="12"/>
+
+  <!-- header -->
+  <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="13" fill="#8B8378" letter-spacing="2">
+    <text x="50" y="48">02 &#x2022; СТЕК</text>
+  </g>
+  <text x="50" y="92" font-family="Newsreader, Georgia, serif" font-size="40" font-weight="400" letter-spacing="-0.5" fill="#2C2A26">Языки, базы данных и <tspan font-style="italic" fill="#8C3A2C">инструменты</tspan>.</text>
+
+  <line x1="50" y1="130" x2="1050" y2="130" stroke="#E5D5BC" stroke-width="1"/>
+
+  <!-- rows -->
+  <g font-family="Newsreader, Georgia, serif" font-style="italic" font-size="20" fill="#8C3A2C" font-weight="500">
+    <text x="50"  y="180">Языки</text>
+    <text x="50"  y="240">Базы данных</text>
+    <text x="50"  y="300">AI · Автоматизация</text>
+    <text x="50"  y="360">AI-coding</text>
+    <text x="50"  y="420">DevOps · Infra</text>
+    <text x="50"  y="480">Observability</text>
+    <text x="50"  y="540">VPN · Proxy</text>
+    <text x="50"  y="600">Cloud</text>
+    <text x="50"  y="660">Payments</text>
+  </g>
+
+  <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="14" fill="#2C2A26">
+    <text x="320" y="180">Python &#x00B7; Go &#x00B7; Swift &#x00B7; TypeScript &#x00B7; SQL &#x00B7; Bash</text>
+    <text x="320" y="240">PostgreSQL &#x00B7; Redis &#x00B7; MongoDB &#x00B7; Supabase &#x00B7; pgvector</text>
+    <text x="320" y="300">OpenRouter &#x00B7; Anthropic &#x00B7; OpenAI &#x00B7; Ollama &#x00B7; ComfyUI &#x00B7; Whisper &#x00B7; n8n &#x00B7; MCP</text>
+    <text x="320" y="360">Claude Code &#x00B7; Ruflo &#x00B7; Cursor &#x00B7; OpenDesign &#x00B7; Copilot &#x00B7; Figma</text>
+    <text x="320" y="420">Docker &#x00B7; Ansible &#x00B7; Terraform &#x00B7; Nginx &#x00B7; Traefik &#x00B7; GitHub Actions &#x00B7; Linux &#x00B7; Cloudflare</text>
+    <text x="320" y="480">Grafana &#x00B7; Prometheus &#x00B7; Loki &#x00B7; ELK &#x00B7; RabbitMQ &#x00B7; Kafka</text>
+    <text x="320" y="540">VLESS &#x00B7; Xray &#x00B7; 3x-ui &#x00B7; Reality &#x00B7; MTProto Fake-TLS</text>
+    <text x="320" y="600">Yandex Cloud &#x00B7; Timeweb Cloud &#x00B7; VPS / bare-metal</text>
+    <text x="320" y="660">YooKassa &#x00B7; Telegram Stars &#x00B7; CryptoBot</text>
+  </g>
+
+  <!-- soft row dividers -->
+  <g stroke="#E5D5BC" stroke-width="0.7" opacity="0.55">
+    <line x1="50" y1="200" x2="1050" y2="200"/>
+    <line x1="50" y1="260" x2="1050" y2="260"/>
+    <line x1="50" y1="320" x2="1050" y2="320"/>
+    <line x1="50" y1="380" x2="1050" y2="380"/>
+    <line x1="50" y1="440" x2="1050" y2="440"/>
+    <line x1="50" y1="500" x2="1050" y2="500"/>
+    <line x1="50" y1="560" x2="1050" y2="560"/>
+    <line x1="50" y1="620" x2="1050" y2="620"/>
+  </g>
+</svg>

@@ -46,17 +46,9 @@
 
 ## **02**&nbsp;&nbsp;/&nbsp;&nbsp;Стек
 
-| | |
-|---|---|
-| **Языки** | `Python` · `Go` · `Swift` · `TypeScript` · `SQL` · `Bash` |
-| **Базы данных** | `PostgreSQL` · `Redis` · `MongoDB` · `Supabase` · `pgvector` |
-| **AI · Автоматизация** | `OpenRouter` · `Anthropic` · `OpenAI` · `Ollama` · `ComfyUI` · `Whisper` · `n8n` · `MCP` |
-| **AI-coding** | `Claude Code` · `Ruflo` · `Cursor` · `OpenDesign` · `Copilot` · `Figma` |
-| **DevOps · Infra** | `Docker` · `Ansible` · `Terraform` · `Nginx` · `Traefik` · `GitHub Actions` · `Linux` · `Cloudflare` |
-| **Observability · Streaming** | `Grafana` · `Prometheus` · `Loki` · `ELK` · `RabbitMQ` · `Kafka` |
-| **VPN · Proxy** | `VLESS` · `Xray` · `3x-ui` · `Reality` · `MTProto Fake-TLS` |
-| **Cloud** | `Yandex Cloud` · `Timeweb Cloud` · `VPS / bare-metal` |
-| **Payments** | `YooKassa` · `Telegram Stars` · `CryptoBot` |
+<p align="center">
+  <img src="assets/stack.svg" width="100%" alt="Стек: языки, базы данных, инструменты" />
+</p>
 
 ---
 
