@@ -41,7 +41,7 @@ class Ivan:
                     "ComfyUI", "n8n", "MCP", "Playwright", "browser-use"],
         "py":      ["FastAPI", "aiogram", "Telethon", "Gunicorn", "SQLAlchemy",
                     "uv", "Poetry", "ruff", "pytest", "httpx", "APScheduler"],
-        "go":      ["Gin", "Echo", "Fiber", "GORM", "sqlx", "gRPC", "Cobra"],
+        "go":      ["Gin", "GORM", "sqlx", "gRPC", "Cobra", "Viper"],
         "front":   ["Next.js", "React", "Quasar", "Tailwind", "shadcn/ui"],
         "mobile":  ["Swift", "SwiftUI", "Live Activities", "Vapor"],
         "data":    ["Postgres", "Supabase", "pgvector", "Redis", "MongoDB", "Kafka"],
@@ -171,8 +171,6 @@ class Ivan:
 
 <p>
   <img src="https://img.shields.io/badge/Gin-008ECF?style=for-the-badge&logo=gin&logoColor=white" />
-  <img src="https://img.shields.io/badge/Echo-4291B5?style=for-the-badge&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/Fiber-00ACD7?style=for-the-badge&logo=go&logoColor=white" />
   <img src="https://img.shields.io/badge/GORM-00ACD7?style=for-the-badge&logo=go&logoColor=white" />
   <img src="https://img.shields.io/badge/sqlx-336791?style=for-the-badge&logo=go&logoColor=white" />
   <img src="https://img.shields.io/badge/gRPC-244c5a?style=for-the-badge&logo=grpc&logoColor=white" />
