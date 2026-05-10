@@ -1,4 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <defs>
+    <linearGradient id="udSweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C46A52" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C46A52" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#C46A52" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="udGridClip">
+      <rect x="50" y="38" width="194" height="96"/>
+    </clipPath>
+  </defs>
   <rect width="320" height="200" fill="#FBF6EC" rx="8"/>
   <g transform="translate(38 38)">
     <g font-family="JetBrains Mono, monospace" font-size="9" fill="#8B8378">
@@ -22,5 +32,31 @@
       <rect x="0" y="84" width="12" height="12" rx="2" fill="#C46A52"/><rect x="14" y="84" width="12" height="12" rx="2"/><rect x="28" y="84" width="12" height="12" rx="2" fill="#D87A56"/><rect x="42" y="84" width="12" height="12" rx="2" fill="#F0CBB8"/><rect x="56" y="84" width="12" height="12" rx="2" fill="#E89B7E"/><rect x="70" y="84" width="12" height="12" rx="2"/><rect x="84" y="84" width="12" height="12" rx="2" fill="#F0CBB8"/><rect x="98" y="84" width="12" height="12" rx="2" fill="#D87A56"/><rect x="112" y="84" width="12" height="12" rx="2"/><rect x="126" y="84" width="12" height="12" rx="2" fill="#E89B7E"/><rect x="140" y="84" width="12" height="12" rx="2" fill="#C46A52"/><rect x="154" y="84" width="12" height="12" rx="2"/><rect x="168" y="84" width="12" height="12" rx="2" fill="#D87A56"/><rect x="182" y="84" width="12" height="12" rx="2" fill="#F0CBB8"/>
     </g>
   </g>
+  <!-- left-to-right wave sweep across the grid -->
+  <g clip-path="url(#udGridClip)" opacity="0.7">
+    <rect x="-30" y="38" width="44" height="96" fill="url(#udSweep)">
+      <animate attributeName="x" values="-44;240" dur="5.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- "today" highlight ring orbiting a cell -->
+  <g fill="none" stroke="#8C3A2C" stroke-width="1.4" opacity="0">
+    <rect x="232" y="122" width="14" height="14" rx="3">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.4s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <!-- streak counter (in the right-margin space) -->
+  <g transform="translate(278 80)">
+    <circle r="14" fill="none" stroke="#C46A52" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="14;22;14" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="13" fill="#C46A52">
+      <animate attributeName="r" values="12;14;12" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text font-family="JetBrains Mono, monospace" font-size="11" fill="#FBF6EC" text-anchor="middle" y="4" font-weight="700">42</text>
+    <text font-family="Newsreader, Georgia, serif" font-style="italic" font-size="9" fill="#8B8378" text-anchor="middle" y="28">streak</text>
+  </g>
+
   <text x="160" y="180" font-family="Newsreader, Georgia, serif" font-size="13" font-style="italic" fill="#8B8378" text-anchor="middle">MCP-сервер · трекинг через Claude</text>
 </svg>

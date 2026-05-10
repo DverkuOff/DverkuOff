@@ -51,16 +51,43 @@
     </circle>
   </g>
 
-  <!-- packets traveling -->
+  <!-- packets traveling (with trailing ghost copies for motion-blur feel) -->
   <g fill="#C46A52">
+    <circle r="2" opacity="0.35">
+      <animateMotion dur="2.8s" begin="-0.18s" repeatCount="indefinite"><mpath href="#path-NL"/></animateMotion>
+    </circle>
+    <circle r="2.6" opacity="0.6">
+      <animateMotion dur="2.8s" begin="-0.09s" repeatCount="indefinite"><mpath href="#path-NL"/></animateMotion>
+    </circle>
     <circle r="3.5">
       <animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#path-NL"/></animateMotion>
+    </circle>
+
+    <circle r="2" opacity="0.35">
+      <animateMotion dur="2.8s" begin="0.52s" repeatCount="indefinite"><mpath href="#path-DE"/></animateMotion>
+    </circle>
+    <circle r="2.6" opacity="0.6">
+      <animateMotion dur="2.8s" begin="0.61s" repeatCount="indefinite"><mpath href="#path-DE"/></animateMotion>
     </circle>
     <circle r="3.5">
       <animateMotion dur="2.8s" begin="0.7s" repeatCount="indefinite"><mpath href="#path-DE"/></animateMotion>
     </circle>
+
+    <circle r="2" opacity="0.35">
+      <animateMotion dur="2.8s" begin="1.22s" repeatCount="indefinite"><mpath href="#path-JP"/></animateMotion>
+    </circle>
+    <circle r="2.6" opacity="0.6">
+      <animateMotion dur="2.8s" begin="1.31s" repeatCount="indefinite"><mpath href="#path-JP"/></animateMotion>
+    </circle>
     <circle r="3.5">
       <animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite"><mpath href="#path-JP"/></animateMotion>
+    </circle>
+
+    <circle r="2" opacity="0.35">
+      <animateMotion dur="2.8s" begin="1.92s" repeatCount="indefinite"><mpath href="#path-US"/></animateMotion>
+    </circle>
+    <circle r="2.6" opacity="0.6">
+      <animateMotion dur="2.8s" begin="2.01s" repeatCount="indefinite"><mpath href="#path-US"/></animateMotion>
     </circle>
     <circle r="3.5">
       <animateMotion dur="2.8s" begin="2.1s" repeatCount="indefinite"><mpath href="#path-US"/></animateMotion>
@@ -69,26 +96,58 @@
 
   <!-- source RU -->
   <g>
+    <circle cx="36" cy="100" r="22" fill="none" stroke="#C46A52" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="22;36;22" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="36" cy="100" r="22" fill="none" stroke="#C46A52" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="22;36;22" dur="2.8s" begin="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0;0.4" dur="2.8s" begin="0.9s" repeatCount="indefinite"/>
+    </circle>
     <circle cx="36" cy="100" r="22" fill="#FBF6EC" stroke="#C46A52" stroke-width="2"/>
     <text x="36" y="104" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C3A2C" text-anchor="middle" font-weight="700">RU</text>
   </g>
 
-  <!-- destination nodes -->
+  <!-- destination nodes (each gets an arrival flash ring) -->
   <g font-family="JetBrains Mono, monospace" font-size="9" fill="#FBF6EC" font-weight="700">
     <g>
-      <circle cx="278" cy="50" r="14" fill="#C46A52" stroke="#8C3A2C" stroke-width="1.2"/>
+      <circle cx="278" cy="50" r="14" fill="none" stroke="#C46A52" stroke-width="1.5" opacity="0">
+        <animate attributeName="r" values="14;26;14" dur="2.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="278" cy="50" r="14" fill="#C46A52" stroke="#8C3A2C" stroke-width="1.2">
+        <animate attributeName="fill" values="#C46A52;#E89B7E;#C46A52" keyTimes="0;0.05;0.4" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
       <text x="278" y="53" text-anchor="middle">NL</text>
     </g>
     <g>
-      <circle cx="278" cy="80" r="14" fill="#C46A52" stroke="#8C3A2C" stroke-width="1.2"/>
+      <circle cx="278" cy="80" r="14" fill="none" stroke="#C46A52" stroke-width="1.5" opacity="0">
+        <animate attributeName="r" values="14;26;14" dur="2.8s" begin="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="2.8s" begin="0.7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="278" cy="80" r="14" fill="#C46A52" stroke="#8C3A2C" stroke-width="1.2">
+        <animate attributeName="fill" values="#C46A52;#E89B7E;#C46A52" keyTimes="0;0.05;0.4" dur="2.8s" begin="0.7s" repeatCount="indefinite"/>
+      </circle>
       <text x="278" y="83" text-anchor="middle">DE</text>
     </g>
     <g>
-      <circle cx="278" cy="120" r="14" fill="#C46A52" stroke="#8C3A2C" stroke-width="1.2"/>
+      <circle cx="278" cy="120" r="14" fill="none" stroke="#C46A52" stroke-width="1.5" opacity="0">
+        <animate attributeName="r" values="14;26;14" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="278" cy="120" r="14" fill="#C46A52" stroke="#8C3A2C" stroke-width="1.2">
+        <animate attributeName="fill" values="#C46A52;#E89B7E;#C46A52" keyTimes="0;0.05;0.4" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+      </circle>
       <text x="278" y="123" text-anchor="middle">JP</text>
     </g>
     <g>
-      <circle cx="278" cy="150" r="14" fill="#C46A52" stroke="#8C3A2C" stroke-width="1.2"/>
+      <circle cx="278" cy="150" r="14" fill="none" stroke="#C46A52" stroke-width="1.5" opacity="0">
+        <animate attributeName="r" values="14;26;14" dur="2.8s" begin="2.1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="2.8s" begin="2.1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="278" cy="150" r="14" fill="#C46A52" stroke="#8C3A2C" stroke-width="1.2">
+        <animate attributeName="fill" values="#C46A52;#E89B7E;#C46A52" keyTimes="0;0.05;0.4" dur="2.8s" begin="2.1s" repeatCount="indefinite"/>
+      </circle>
       <text x="278" y="153" text-anchor="middle">US</text>
     </g>
   </g>
