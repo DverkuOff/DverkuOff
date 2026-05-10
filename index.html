@@ -553,6 +553,16 @@
     transform: rotate(-3deg);
     transition: transform .35s ease;
   }
+  @media (max-width: 760px) {
+    .thumb-4 { aspect-ratio: 4 / 5.2; }
+    .iphone {
+      height: 90%;
+      transform: rotate(0deg);
+      border-radius: 36px;
+      padding: 7px;
+    }
+    .iphone-screen { border-radius: 30px; }
+  }
   .project:hover .iphone { transform: rotate(0deg) translateY(-2px); }
   .iphone-screen {
     width: 100%;
@@ -1087,12 +1097,6 @@
       </p>
     </div>
 
-    <blockquote class="about-quote">
-      Хороший AI-сервис — это на 80% обычная инженерия и на 20% магия.
-      Большинство берётся за вторые 20%, я предпочитаю сначала закрыть
-      первые 80.
-      <cite>— Личное credo</cite>
-    </blockquote>
   </div>
 </section>
 
