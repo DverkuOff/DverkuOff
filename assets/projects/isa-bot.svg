@@ -1,59 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
-  <rect width="320" height="220" fill="#FBF6EC" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" text-rendering="geometricPrecision" shape-rendering="geometricPrecision">
+  <rect width="640" height="440" fill="#FBF6EC" rx="16"/>
 
   <defs>
-    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#5D4D8A"/>
-      <stop offset="55%" stop-color="#C99B8E"/>
-      <stop offset="100%" stop-color="#E5BAA0"/>
-    </linearGradient>
-    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1A1A1A" flood-opacity="0.10"/>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1A1A1A" flood-opacity="0.10"/>
     </filter>
   </defs>
 
-  <!-- Card with entry animation -->
+  <!-- Card -->
   <g filter="url(#cardShadow)">
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.6s" fill="freeze"/>
 
-      <!-- main message card -->
-      <rect x="20" y="18" width="280" height="160" rx="14" fill="#FFFCF6" stroke="#E5D5BC" stroke-width="1.2"/>
+      <rect x="40" y="36" width="560" height="320" rx="28" fill="#FFFCF6" stroke="#E5D5BC" stroke-width="2.4"/>
 
-      <!-- header: bot identity -->
+      <!-- header -->
       <g>
-        <circle cx="42" cy="40" r="11" fill="#C46A52"/>
-        <text x="42" y="44" font-family="Newsreader, Georgia, serif" font-style="italic" font-size="12" fill="#FBF6EC" text-anchor="middle" font-weight="700">A</text>
-        <text x="60" y="38" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#2C2A26">ISA-Bot</text>
-        <text x="60" y="50" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#8B8378">@isa_parser_bot</text>
+        <circle cx="84" cy="80" r="22" fill="#C46A52"/>
+        <text x="84" y="88" font-family="Newsreader, Georgia, serif" font-style="italic" font-size="24" fill="#FBF6EC" text-anchor="middle" font-weight="700">A</text>
+        <text x="120" y="76" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#2C2A26">ISA-Bot</text>
+        <text x="120" y="100" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8B8378">@isa_parser_bot</text>
 
-        <!-- "new" pulsing badge -->
-        <circle cx="240" cy="36" r="3" fill="#7BAF6B">
+        <circle cx="480" cy="72" r="6" fill="#7BAF6B">
           <animate attributeName="opacity" values="0.4;1;0.4" dur="1.6s" repeatCount="indefinite"/>
         </circle>
-        <text x="248" y="40" font-family="Inter, sans-serif" font-size="9" fill="#5C8C5A" font-weight="600">новое</text>
-        <text x="280" y="52" font-family="Inter, sans-serif" font-size="8" fill="#8B8378" text-anchor="end">14:32</text>
+        <text x="496" y="80" font-family="Inter, sans-serif" font-size="18" fill="#5C8C5A" font-weight="600">новое</text>
+        <text x="560" y="104" font-family="Inter, sans-serif" font-size="16" fill="#8B8378" text-anchor="end">14:32</text>
       </g>
 
       <!-- divider -->
-      <line x1="34" y1="64" x2="286" y2="64" stroke="#E5D5BC" stroke-width="1"/>
+      <line x1="68" y1="128" x2="572" y2="128" stroke="#E5D5BC" stroke-width="2"/>
 
       <!-- listing body -->
       <g>
-        <text x="40" y="92" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#2C2A26">iPhone 15 Pro Max</text>
-        <text x="40" y="108" font-family="Inter, sans-serif" font-size="10" fill="#666">256 GB · Natural Titanium</text>
-        <text x="40" y="122" font-family="Inter, sans-serif" font-size="10" fill="#666">Аккумулятор: 100%</text>
-        <text x="40" y="136" font-family="Inter, sans-serif" font-size="10" fill="#666">Состояние: новый</text>
+        <text x="80" y="184" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700" fill="#2C2A26">iPhone 15 Pro Max</text>
+        <text x="80" y="216" font-family="Inter, sans-serif" font-size="20" fill="#666">256 GB · Natural Titanium</text>
+        <text x="80" y="244" font-family="Inter, sans-serif" font-size="20" fill="#666">Аккумулятор: 100%</text>
+        <text x="80" y="272" font-family="Inter, sans-serif" font-size="20" fill="#666">Состояние: новый</text>
 
-        <!-- price (big, terra) -->
-        <text x="40" y="162" font-family="JetBrains Mono, monospace" font-size="19" font-weight="700" fill="#8C3A2C">89 990 ₽</text>
+        <!-- price -->
+        <text x="80" y="324" font-family="JetBrains Mono, monospace" font-size="38" font-weight="700" fill="#8C3A2C">89 990 ₽</text>
 
         <!-- location pill -->
-        <rect x="200" y="148" width="78" height="20" rx="10" fill="#F5EBD8" stroke="#E5D5BC" stroke-width="0.8"/>
-        <text x="239" y="161" font-family="Inter, sans-serif" font-size="10" fill="#8C3A2C" text-anchor="middle" font-weight="600">Москва</text>
+        <rect x="400" y="296" width="156" height="40" rx="20" fill="#F5EBD8" stroke="#E5D5BC" stroke-width="1.6"/>
+        <text x="478" y="322" font-family="Inter, sans-serif" font-size="20" fill="#8C3A2C" text-anchor="middle" font-weight="600">Москва</text>
       </g>
     </g>
   </g>
 
-  <text x="160" y="200" font-family="Newsreader, Georgia, serif" font-size="13" font-style="italic" fill="#8B8378" text-anchor="middle">парсер 5 каналов · валидация · TG-уведомления</text>
+  <text x="320" y="400" font-family="Newsreader, Georgia, serif" font-size="26" font-style="italic" fill="#8B8378" text-anchor="middle">парсер 5 каналов · валидация · TG-уведомления</text>
 </svg>
