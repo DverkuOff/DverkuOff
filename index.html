@@ -1,0 +1,1165 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ivan · DverkuOff — AI Automation Engineer</title>
+<meta name="description" content="Ivan · DverkuOff — AI Automation, Telegram-боты, VPN-инфраструктура, backend на Python и Go." />
+<meta name="theme-color" content="#f5f0e8" />
+<meta property="og:title" content="Ivan · DverkuOff — AI Automation Engineer" />
+<meta property="og:description" content="AI пишет код — я архитектор системы. Telegram, VPN, backend." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://dverkuoff.github.io/" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        oklch(97% 0.018 70);
+    --bg-warm:   oklch(95% 0.022 65);
+    --surface:   oklch(99% 0.008 70);
+    --fg:        oklch(22% 0.02 50);
+    --fg-soft:   oklch(35% 0.022 50);
+    --muted:     oklch(50% 0.018 50);
+    --border:    oklch(90% 0.014 70);
+    --border-strong: oklch(82% 0.016 65);
+    --accent:    oklch(64% 0.13 28);
+    --accent-ink: oklch(48% 0.13 30);
+
+    --font-display: 'Newsreader', 'Tiempos Headline', 'Iowan Old Style', Georgia, serif;
+    --font-body:    -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    --font-mono:    'JetBrains Mono', ui-monospace, 'IBM Plex Mono', Menlo, monospace;
+
+    --max:    1180px;
+    --gutter: clamp(20px, 4vw, 56px);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "ss01", "kern", "liga";
+  }
+  ::selection { background: var(--accent); color: var(--bg); }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding-inline: var(--gutter);
+  }
+
+  header.site {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: color-mix(in oklab, var(--bg) 78%, transparent);
+    border-bottom: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
+  }
+  .site-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .wordmark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: var(--fg-soft);
+  }
+  .wordmark .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 22%, transparent);
+  }
+  nav.site-nav {
+    display: flex;
+    gap: 28px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  nav.site-nav a { transition: color .2s ease; }
+  nav.site-nav a:hover { color: var(--accent); }
+  nav.site-nav .cta {
+    color: var(--fg);
+    border: 1px solid var(--border-strong);
+    padding: 6px 14px;
+    border-radius: 999px;
+    transition: all .2s ease;
+  }
+  nav.site-nav .cta:hover {
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
+  }
+  @media (max-width: 720px) {
+    nav.site-nav a:not(.cta) { display: none; }
+  }
+
+  .hero {
+    padding-top: clamp(60px, 10vw, 120px);
+    padding-bottom: clamp(80px, 12vw, 160px);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: auto -10% -40% -10%;
+    height: 280px;
+    background: radial-gradient(ellipse at 50% 0%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    position: relative;
+    z-index: 1;
+  }
+  @media (min-width: 920px) {
+    .hero-grid { grid-template-columns: 1.4fr 1fr; align-items: end; }
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: var(--border-strong);
+  }
+  h1.display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(54px, 9vw, 120px);
+    line-height: 0.96;
+    letter-spacing: -0.025em;
+    margin: 0 0 28px;
+    text-wrap: balance;
+  }
+  h1.display em {
+    font-style: italic;
+    color: var(--accent-ink);
+    font-weight: 400;
+  }
+  .hero-sub {
+    font-family: var(--font-display);
+    font-size: clamp(20px, 2.4vw, 26px);
+    line-height: 1.4;
+    color: var(--fg-soft);
+    max-width: 580px;
+    margin: 0 0 36px;
+    text-wrap: pretty;
+  }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .hero-meta b { color: var(--fg); font-weight: 500; }
+  .hero-meta .live { display: inline-flex; align-items: center; gap: 8px; }
+  .hero-meta .live::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: oklch(64% 0.16 145);
+    box-shadow: 0 0 0 4px color-mix(in oklab, oklch(64% 0.16 145) 18%, transparent);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.4; }
+  }
+
+  .hero-card {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 22px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, color-mix(in oklab, var(--accent) 50%, white) 0%, var(--accent) 70%);
+    color: var(--bg);
+    display: grid;
+    place-items: center;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .now-block .now-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .now-list {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-direction: column; gap: 10px;
+    font-size: 14px; color: var(--fg-soft);
+  }
+  .now-list li { display: flex; gap: 12px; align-items: baseline; }
+  .now-list .marker {
+    color: var(--accent);
+    font-family: var(--font-display);
+    font-style: italic;
+    flex-shrink: 0;
+  }
+
+  section.block {
+    padding-block: clamp(72px, 10vw, 130px);
+    border-top: 1px solid var(--border);
+  }
+  .block-head {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: clamp(40px, 5vw, 64px);
+  }
+  @media (min-width: 820px) {
+    .block-head {
+      grid-template-columns: 220px 1fr;
+      gap: 48px;
+      align-items: baseline;
+    }
+  }
+  .block-num {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .block-title {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .block-title em { font-style: italic; color: var(--accent-ink); }
+  .block-lead {
+    font-family: var(--font-display);
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.5;
+    color: var(--fg-soft);
+    max-width: 640px;
+    margin-top: 18px;
+    text-wrap: pretty;
+  }
+
+  .about-prose {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 880px;
+  }
+  @media (min-width: 720px) {
+    .about-prose { grid-template-columns: 1fr 1fr; gap: 48px; }
+  }
+  .about-prose p {
+    font-family: var(--font-display);
+    font-size: 19px;
+    line-height: 1.65;
+    margin: 0;
+    color: var(--fg-soft);
+    text-wrap: pretty;
+  }
+  .about-prose p::first-letter {
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--accent-ink);
+  }
+  .about-quote {
+    margin-top: 56px;
+    border-left: 2px solid var(--accent);
+    padding-left: 28px;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(22px, 2.6vw, 30px);
+    line-height: 1.4;
+    color: var(--fg);
+    max-width: 760px;
+    text-wrap: balance;
+  }
+  .about-quote cite {
+    display: block;
+    font-style: normal;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-top: 16px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+  @media (min-width: 720px) {
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+    .skills-grid .skill-cat:nth-child(odd) { border-right: 1px solid var(--border); }
+    .skills-grid .skill-cat:nth-last-child(-n+2) { border-bottom: none; }
+  }
+  .skill-cat {
+    padding: 32px 0 32px;
+    border-bottom: 1px solid var(--border);
+    padding-right: 32px;
+  }
+  @media (min-width: 720px) {
+    .skill-cat { padding: 36px 32px 36px 0; }
+    .skill-cat:nth-child(even) { padding-left: 32px; padding-right: 0; }
+  }
+  .skill-cat .cat-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 18px; }
+  .skill-cat .cat-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.14em;
+  }
+  .skill-cat h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .skill-cat .cat-blurb {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.55;
+    margin: 0 0 22px;
+    max-width: 460px;
+  }
+  .skill-list {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .skill-list li {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    padding: 6px 11px;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    background: color-mix(in oklab, var(--surface) 70%, transparent);
+    color: var(--fg-soft);
+    transition: all .18s ease;
+    cursor: default;
+  }
+  .skill-list li:hover {
+    color: var(--accent-ink);
+    border-color: var(--accent);
+    background: color-mix(in oklab, var(--accent) 8%, var(--surface));
+  }
+  .skill-list li.lead {
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
+  }
+  .skill-list li.lead:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+  }
+
+  .timeline { display: flex; flex-direction: column; }
+  .tl-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 32px 0;
+    border-top: 1px solid var(--border);
+    position: relative;
+  }
+  .tl-row:last-child { border-bottom: 1px solid var(--border); }
+  @media (min-width: 720px) {
+    .tl-row {
+      grid-template-columns: 180px 1fr 1fr;
+      gap: 40px;
+      padding: 36px 0;
+    }
+  }
+  .tl-year {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+  .tl-role {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+  .tl-role .org {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-top: 4px;
+    letter-spacing: normal;
+  }
+  .tl-desc {
+    font-size: 15px;
+    color: var(--fg-soft);
+    line-height: 1.55;
+    max-width: 560px;
+  }
+  .tl-tags { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tl-tags span {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    padding: 3px 8px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  @media (min-width: 760px) {
+    .projects-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .3s ease;
+  }
+  .project:hover { transform: translateY(-4px); }
+  .project-thumb {
+    aspect-ratio: 4 / 3;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-items: center;
+    transition: border-color .25s ease;
+  }
+  .project:hover .project-thumb { border-color: var(--border-strong); }
+
+  .thumb-1 {
+    background:
+      radial-gradient(circle at 70% 30%, color-mix(in oklab, var(--accent) 30%, var(--bg-warm)) 0%, var(--bg-warm) 60%),
+      var(--bg-warm);
+  }
+  .thumb-1::before {
+    content: "";
+    position: absolute;
+    inset: 24px;
+    border: 1px dashed color-mix(in oklab, var(--fg) 25%, transparent);
+    border-radius: 12px;
+  }
+  .thumb-1::after {
+    content: "{ }";
+    font-family: var(--font-mono);
+    font-size: 64px;
+    color: color-mix(in oklab, var(--fg) 80%, transparent);
+    letter-spacing: -0.05em;
+  }
+  .thumb-2 {
+    background: linear-gradient(140deg, oklch(28% 0.04 50) 0%, oklch(22% 0.03 50) 100%);
+    color: oklch(95% 0.02 70);
+  }
+  .thumb-2 .grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(to right, oklch(95% 0.02 70 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(95% 0.02 70 / 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .thumb-2 .signal {
+    position: relative;
+    width: 70%;
+    height: 60%;
+    background: linear-gradient(180deg, transparent 65%, color-mix(in oklab, var(--accent) 28%, transparent) 100%);
+    overflow: hidden;
+  }
+  .thumb-2 .signal svg { width: 100%; height: 100%; display: block; }
+  .thumb-3 { background: var(--surface); }
+  .thumb-3 .nodes { position: relative; width: 80%; height: 70%; }
+  .thumb-3 .nodes svg { width: 100%; height: 100%; }
+  .thumb-4 { background: oklch(94% 0.026 65); }
+  .thumb-4 .layout-mock {
+    width: 70%;
+    height: 70%;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 14px 1fr;
+    overflow: hidden;
+  }
+  .thumb-4 .layout-mock .bar {
+    background: oklch(85% 0.018 60);
+    border-bottom: 1px solid var(--border-strong);
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    gap: 4px;
+  }
+  .thumb-4 .layout-mock .bar i {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: oklch(78% 0.02 60);
+  }
+  .thumb-4 .layout-mock .body {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    gap: 8px;
+  }
+  .thumb-4 .layout-mock .body .col-l {
+    background: oklch(90% 0.02 60);
+    border-radius: 4px;
+  }
+  .thumb-4 .layout-mock .body .col-r {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 6px;
+  }
+  .thumb-4 .layout-mock .body .col-r span {
+    background: oklch(90% 0.02 60);
+    border-radius: 3px;
+  }
+  .thumb-4 .layout-mock .body .col-r span:first-child { background: var(--accent); }
+
+  .project-meta {
+    display: flex;
+    gap: 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .project-meta .year { color: var(--fg-soft); }
+  .project h3.project-title {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+  .project p.project-desc {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--fg-soft);
+    margin: 0;
+    max-width: 460px;
+  }
+  .project .stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .project .stack span {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .project .stack span:not(:last-child)::after {
+    content: " ·";
+    margin-left: 4px;
+  }
+
+  footer.contact {
+    padding-block: clamp(80px, 12vw, 140px);
+    border-top: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-warm) 100%);
+  }
+  .contact-headline {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(40px, 7vw, 88px);
+    line-height: 1;
+    letter-spacing: -0.025em;
+    margin: 0 0 48px;
+    text-wrap: balance;
+    max-width: 12ch;
+  }
+  .contact-headline em { font-style: italic; color: var(--accent-ink); }
+  .contact-rows {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-top: 1px solid var(--border-strong);
+  }
+  .contact-rows a {
+    display: grid;
+    grid-template-columns: 140px 1fr auto;
+    align-items: center;
+    gap: 24px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--border-strong);
+    transition: padding .25s ease, color .25s ease;
+  }
+  @media (max-width: 600px) {
+    .contact-rows a {
+      grid-template-columns: 100px 1fr;
+      grid-template-rows: auto auto;
+    }
+    .contact-rows a .arrow { grid-column: 2; justify-self: end; }
+  }
+  .contact-rows a:hover { padding-left: 16px; color: var(--accent-ink); }
+  .contact-rows .label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+  .contact-rows .value {
+    font-family: var(--font-display);
+    font-size: clamp(20px, 2.4vw, 28px);
+    color: var(--fg);
+    letter-spacing: -0.01em;
+  }
+  .contact-rows .arrow {
+    font-family: var(--font-display);
+    font-size: 22px;
+    color: var(--muted);
+    transition: transform .25s ease, color .25s ease;
+  }
+  .contact-rows a:hover .arrow {
+    transform: translate(6px, -2px);
+    color: var(--accent);
+  }
+
+  .colophon {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .8s ease, transform .8s cubic-bezier(0.2, 0.7, 0.1, 1);
+  }
+  .reveal.visible { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .hero-meta .live::before { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap site-inner">
+    <a href="#top" class="wordmark"><span class="dot"></span>dverkuoff.txt</a>
+    <nav class="site-nav">
+      <a href="#about">О себе</a>
+      <a href="#skills">Стек</a>
+      <a href="#experience">Опыт</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact" class="cta">Связаться</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Россия · открыт к коллаборациям</div>
+        <h1 class="display">
+          Собираю <em>AI-агентов</em>,<br>
+          боты, VPN<br>
+          и backend.
+        </h1>
+        <p class="hero-sub">
+          AI Automation Engineer. AI пишет код — я архитектор системы.
+          Делаю автоматизации, Telegram-ботов, VPN-сервисы и backend под рынок 2026-го.
+        </p>
+        <div class="hero-meta">
+          <span class="live">Available for collaboration</span>
+          <span><b>5</b> языков в стеке</span>
+          <span><b>70+</b> инструментов в работе</span>
+          <span><b>1 год</b> самообучения</span>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="avatar" aria-hidden="true">I</div>
+        <div class="now-block">
+          <div class="now-label">Сейчас</div>
+          <ul class="now-list">
+            <li><span class="marker">→</span><span>Строю мульти-агентные пайплайны: n8n + MCP + OpenRouter</span></li>
+            <li><span class="marker">→</span><span>Развиваю VPN-стек: VLESS, 3x-ui, MTProto Fake-TLS, Reality</span></li>
+            <li><span class="marker">→</span><span>Пишу iOS с SwiftUI и Live Activities</span></li>
+            <li><span class="marker">→</span><span>Оркеструю код через Claude Code + Ruflo</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="about">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="block-num">01 / О себе</div>
+      <h2 class="block-title">Инженер на стыке <em>AI, инфры и кода</em>.</h2>
+    </div>
+
+    <div class="about-prose">
+      <p>
+        Год назад в вузе меня учили пользоваться Word. Я пошёл другой
+        дорогой — освоил Python и aiogram, потом FastAPI и SQLAlchemy,
+        потом Go, Docker, инфра и AI. Не «прошёл курс», а собрал
+        стек, в котором каждый инструмент стоит на своём месте.
+      </p>
+      <p>
+        Сейчас фокус — <strong>AI Automation</strong>: оркестрация
+        моделей через OpenRouter и Claude, агенты на MCP, пайплайны
+        на n8n. AI пишет код, я держу архитектуру: чёткие границы
+        сервисов, очереди, prompt cache, понятный SLA. Без магии,
+        просто инженерия с правильными инструментами.
+      </p>
+    </div>
+
+    <blockquote class="about-quote">
+      Хороший AI-сервис — это на 80% обычная инженерия и на 20% магия.
+      Большинство берётся за вторые 20%, я предпочитаю сначала закрыть
+      первые 80.
+      <cite>— Личное credo</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="block reveal" id="skills">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="block-num">02 / Стек</div>
+      <div>
+        <h2 class="block-title">Инструменты, с которыми работаю <em>каждый день</em>.</h2>
+        <p class="block-lead">
+          Не «знаком слышал», а реально в продакшене. Категории — по
+          частоте использования, не по красоте резюме.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <div class="cat-head">
+          <span class="cat-num">A</span>
+          <h3>AI Automation</h3>
+        </div>
+        <p class="cat-blurb">
+          Основное направление. Оркестрирую LLM, строю мульти-шаговые
+          пайплайны, дёргаю инструменты через MCP. Локально и в облаке.
+        </p>
+        <ul class="skill-list">
+          <li class="lead">n8n</li>
+          <li class="lead">OpenRouter</li>
+          <li class="lead">MCP</li>
+          <li class="lead">Anthropic</li>
+          <li class="lead">OpenAI</li>
+          <li>Ollama</li>
+          <li>Whisper</li>
+          <li>ComfyUI</li>
+          <li>LangChain</li>
+          <li>pgvector / RAG</li>
+          <li>Playwright</li>
+          <li>browser-use</li>
+        </ul>
+      </div>
+
+      <div class="skill-cat">
+        <div class="cat-head">
+          <span class="cat-num">B</span>
+          <h3>Backend · Telegram</h3>
+        </div>
+        <p class="cat-blurb">
+          Сервисы на Python и Go. aiogram + Telethon + Local Bot API
+          для Telegram-экосистемы любой сложности — от ботов-продажников
+          до распределённых платформ.
+        </p>
+        <ul class="skill-list">
+          <li class="lead">Python</li>
+          <li class="lead">Go</li>
+          <li class="lead">Swift</li>
+          <li>FastAPI</li>
+          <li>aiogram</li>
+          <li>Telethon</li>
+          <li>Local Bot API</li>
+          <li>Gunicorn</li>
+          <li>SQLAlchemy</li>
+          <li>Gin</li>
+          <li>gRPC</li>
+          <li>SwiftUI</li>
+          <li>Live Activities</li>
+        </ul>
+      </div>
+
+      <div class="skill-cat">
+        <div class="cat-head">
+          <span class="cat-num">C</span>
+          <h3>DevOps · VPN · Infra</h3>
+        </div>
+        <p class="cat-blurb">
+          От Docker Compose до IaC. Полный VPN-стек на VLESS / 3x-ui /
+          Reality, observability на Grafana + Loki + ELK.
+        </p>
+        <ul class="skill-list">
+          <li class="lead">Docker</li>
+          <li class="lead">Ansible</li>
+          <li class="lead">Terraform</li>
+          <li class="lead">VLESS</li>
+          <li class="lead">3x-ui</li>
+          <li>MTProto Fake-TLS</li>
+          <li>Reality</li>
+          <li>Nginx</li>
+          <li>Traefik</li>
+          <li>Grafana</li>
+          <li>Loki</li>
+          <li>ELK</li>
+          <li>GitHub Actions</li>
+          <li>Cloudflare</li>
+        </ul>
+      </div>
+
+      <div class="skill-cat">
+        <div class="cat-head">
+          <span class="cat-num">D</span>
+          <h3>AI-driven Dev</h3>
+        </div>
+        <p class="cat-blurb">
+          AI пишет код, я архитектор. Связка Claude Code + Ruflo для
+          бэка, OpenDesign + v0 + bolt.new — для фронта и дизайна.
+        </p>
+        <ul class="skill-list">
+          <li class="lead">Claude Code</li>
+          <li class="lead">Ruflo</li>
+          <li class="lead">Cursor</li>
+          <li class="lead">OpenDesign</li>
+          <li>v0</li>
+          <li>bolt.new</li>
+          <li>Lovable</li>
+          <li>Aider</li>
+          <li>Copilot</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="experience">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="block-num">03 / Опыт</div>
+      <h2 class="block-title">Чем я занимался <em>в последние годы</em>.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-row">
+        <div class="tl-year">2026 — настоящее</div>
+        <div class="tl-role">
+          AI Automation Engineer
+          <span class="org">Independent · self-taught</span>
+        </div>
+        <div class="tl-desc">
+          Фокус на агентных пайплайнах: n8n, OpenRouter, MCP-серверы,
+          ComfyUI, Whisper. Связка Claude Code + Ruflo для оркестрации
+          разработки. Поднимаю и масштабирую VPN-инфраструктуру под
+          российский рынок.
+          <div class="tl-tags">
+            <span>n8n</span><span>MCP</span><span>OpenRouter</span><span>Claude Code</span><span>Ruflo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">2025</div>
+        <div class="tl-role">
+          Backend · Telegram · VPN
+          <span class="org">Self-taught · pet & client projects</span>
+        </div>
+        <div class="tl-desc">
+          Год освоения серьёзного стека. От первого aiogram-бота — до
+          полноценной VPN-платформы с панелью, ботом-продажником,
+          payments и mini-app. Параллельно — десятки Telegram-ботов
+          под разные ниши.
+          <div class="tl-tags">
+            <span>Python</span><span>FastAPI</span><span>aiogram</span><span>VLESS</span><span>3x-ui</span><span>Docker</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">2024</div>
+        <div class="tl-role">
+          Первый код
+          <span class="org">Универ учил Word, я учил Python</span>
+        </div>
+        <div class="tl-desc">
+          Понял, что классическое образование не догоняет рынок.
+          Начал с Python и Telegram-ботов параллельно с парами,
+          подключил Docker и Linux. Дальше всё — самостоятельно,
+          по практическим задачам.
+          <div class="tl-tags">
+            <span>Python</span><span>Telegram Bot API</span><span>Linux</span><span>Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="projects">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="block-num">04 / Проекты</div>
+      <div>
+        <h2 class="block-title">Несколько вещей, <em>которыми горжусь</em>.</h2>
+        <p class="block-lead">
+          Реальные кейсы — без NDA-частей. Если захочется деталей по
+          конкретному, напиши, я расскажу.
+        </p>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <a class="project" href="#contact">
+        <div class="project-thumb thumb-1" aria-hidden="true"></div>
+        <div class="project-meta">
+          <span class="year">2026</span>
+          <span>AI Automation</span>
+        </div>
+        <h3 class="project-title">Мульти-агентные пайплайны на n8n + MCP</h3>
+        <p class="project-desc">
+          Связка n8n с MCP-серверами и OpenRouter для оркестрации
+          моделей: ресёрч, парсинг, генерация контента, действия в
+          браузере через browser-use. Агенты ходят в БД, веб и
+          кодовую базу через инструменты.
+        </p>
+        <div class="stack">
+          <span>n8n</span><span>MCP</span><span>OpenRouter</span><span>browser-use</span>
+        </div>
+      </a>
+
+      <a class="project" href="#contact">
+        <div class="project-thumb thumb-2" aria-hidden="true">
+          <div class="grid-lines"></div>
+          <div class="signal">
+            <svg viewBox="0 0 200 100" preserveAspectRatio="none">
+              <polyline
+                points="0,80 20,72 35,75 50,55 70,60 85,40 100,48 120,30 140,42 160,18 180,28 200,10"
+                fill="none"
+                stroke="oklch(64% 0.13 28)"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+              <polyline
+                points="0,80 20,72 35,75 50,55 70,60 85,40 100,48 120,30 140,42 160,18 180,28 200,10 200,100 0,100"
+                fill="oklch(64% 0.13 28 / 0.18)"
+                stroke="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="year">2025—2026</span>
+          <span>VPN · Full-stack</span>
+        </div>
+        <h3 class="project-title">VPN-платформа на VLESS</h3>
+        <p class="project-desc">
+          Полный стек под российский рынок: панель управления
+          (3x-ui), бот-продажник, consumer-сервис, payments, mini-app.
+          VLESS, Reality, MTProto Fake-TLS, обход блокировок.
+          Десятки активных клиентов.
+        </p>
+        <div class="stack">
+          <span>VLESS</span><span>3x-ui</span><span>aiogram</span><span>FastAPI</span>
+        </div>
+      </a>
+
+      <a class="project" href="#contact">
+        <div class="project-thumb thumb-3" aria-hidden="true">
+          <div class="nodes">
+            <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+              <g stroke="oklch(50% 0.018 50 / 0.45)" stroke-width="1.2" fill="none">
+                <line x1="60"  y1="60"  x2="160" y2="40"/>
+                <line x1="60"  y1="60"  x2="160" y2="100"/>
+                <line x1="160" y1="40"  x2="260" y2="60"/>
+                <line x1="160" y1="100" x2="260" y2="60"/>
+                <line x1="160" y1="100" x2="260" y2="140"/>
+                <line x1="60"  y1="60"  x2="60"  y2="140"/>
+                <line x1="60"  y1="140" x2="160" y2="160"/>
+                <line x1="160" y1="160" x2="260" y2="140"/>
+              </g>
+              <g fill="oklch(64% 0.13 28)">
+                <circle cx="160" cy="40" r="6"/>
+              </g>
+              <g fill="oklch(22% 0.02 50)">
+                <circle cx="60"  cy="60"  r="5"/>
+                <circle cx="60"  cy="140" r="5"/>
+                <circle cx="160" cy="100" r="5"/>
+                <circle cx="160" cy="160" r="5"/>
+                <circle cx="260" cy="60"  r="5"/>
+                <circle cx="260" cy="140" r="5"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="year">2025—2026</span>
+          <span>Telegram · Backend</span>
+        </div>
+        <h3 class="project-title">Telegram-bot экосистема</h3>
+        <p class="project-desc">
+          Десятки ботов под разные ниши: образование, парсеры,
+          mailing-системы, файловые сервисы, аналитика. aiogram 3 +
+          Local Bot API (без 50MB лимита), FastAPI-бэкенд,
+          PostgreSQL + Redis, очереди и фоновые задачи.
+        </p>
+        <div class="stack">
+          <span>aiogram</span><span>Telethon</span><span>Local Bot API</span><span>FastAPI</span>
+        </div>
+      </a>
+
+      <a class="project" href="#contact">
+        <div class="project-thumb thumb-4" aria-hidden="true">
+          <div class="layout-mock">
+            <div class="bar"><i></i><i></i><i></i></div>
+            <div class="body">
+              <div class="col-l"></div>
+              <div class="col-r"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="year">2026</span>
+          <span>iOS · SwiftUI</span>
+        </div>
+        <h3 class="project-title">iOS-приложение с Live Activities</h3>
+        <p class="project-desc">
+          Native iOS на SwiftUI с Live Activities на Lock Screen и
+          Dynamic Island. Combine для реактивщины, Vapor — для
+          serverside-частей. Опыт работы с native-стеком, которого нет
+          у большинства бэкендеров.
+        </p>
+        <div class="stack">
+          <span>SwiftUI</span><span>Live Activities</span><span>Vapor</span><span>Combine</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2 class="contact-headline">Напиши, если что-то <em>срезонировало</em>.</h2>
+
+    <div class="contact-rows">
+      <a href="https://t.me/DverkuOff" target="_blank" rel="noopener">
+        <span class="label">Telegram</span>
+        <span class="value">@DverkuOff</span>
+        <span class="arrow">↗</span>
+      </a>
+      <a href="mailto:wanna.chill.corp@gmail.com">
+        <span class="label">Email</span>
+        <span class="value">wanna.chill.corp@gmail.com</span>
+        <span class="arrow">↗</span>
+      </a>
+      <a href="https://github.com/DverkuOff" target="_blank" rel="noopener">
+        <span class="label">GitHub</span>
+        <span class="value">@DverkuOff</span>
+        <span class="arrow">↗</span>
+      </a>
+      <a href="#top" style="border-bottom: none;">
+        <span class="label">Наверх</span>
+        <span class="value" style="font-style: italic; color: var(--muted);">↑ к началу</span>
+        <span class="arrow"></span>
+      </a>
+    </div>
+
+    <div class="colophon">
+      <span>© 2026 · Ivan · DverkuOff</span>
+      <span>code → coffee → ship → repeat</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    }
+  }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
