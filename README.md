@@ -1,5 +1,5 @@
 <div align="center">
-  <h2>Иван Суслов · DverkuOff</h2>
+  <h2>Иван · DverkuOff</h2>
 
   <p><b>AI Engineer</b> · LLM-агенты · Backend · DevOps</p>
 
