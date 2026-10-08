@@ -32,10 +32,8 @@
 
 **Мониторинг**
 
-<img src="https://skillicons.dev/icons?i=prometheus,grafana" />
-
-Loki · Alertmanager
+<img src="assets/icons/monitoring.svg" />
 
 **AI / LLM**
 
-n8n · LangChain · LangGraph · RAG · Ollama · llama.cpp · Whisper · MCP
+<img src="assets/icons/ai.svg" />
