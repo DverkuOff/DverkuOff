@@ -7,8 +7,6 @@
     <a href="https://t.me/DverkuOff">Telegram</a>
     &nbsp;·&nbsp;
     <a href="mailto:wanna.chill.corp@gmail.com">Email</a>
-    &nbsp;·&nbsp;
-    <a href="https://dverkuoff.github.io/DverkuOff/">Сайт</a>
   </p>
 </div>
 
@@ -20,29 +18,24 @@
 
 ## Стек
 
-**Языки и бэкенд**
+**Языки**
 
-<img src="https://skillicons.dev/icons?i=python,go,fastapi,bash&perline=10" />
+<img src="https://skillicons.dev/icons?i=python,go,js,bash,swift" />
 
-**Данные**
+**Базы данных и очереди**
 
-<img src="https://skillicons.dev/icons?i=postgres,redis,mongodb,rabbitmq,sqlite&perline=10" />
+<img src="https://skillicons.dev/icons?i=postgres,redis,mongodb,rabbitmq" />
 
-**Инфраструктура и DevOps**
+**DevOps**
 
-<img src="https://skillicons.dev/icons?i=docker,linux,nginx,githubactions,terraform,ansible,kubernetes,git&perline=10" />
+<img src="https://skillicons.dev/icons?i=docker,linux,nginx,githubactions,terraform,ansible,git" />
 
 **Мониторинг**
 
-<img src="https://skillicons.dev/icons?i=prometheus,grafana&perline=10" />
+<img src="https://skillicons.dev/icons?i=prometheus,grafana" />
+
+Loki · Alertmanager
 
 **AI / LLM**
 
-<p>
-  <img src="https://img.shields.io/badge/n8n-334155?style=for-the-badge&logo=n8n&logoColor=EA4B71" />
-  <img src="https://img.shields.io/badge/LangChain-334155?style=for-the-badge&logo=langchain&logoColor=white" />
-  <img src="https://img.shields.io/badge/Ollama-334155?style=for-the-badge&logo=ollama&logoColor=white" />
-  <img src="https://img.shields.io/badge/llama.cpp-334155?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Whisper-334155?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MCP-334155?style=for-the-badge" />
-</p>
+n8n · LangChain · LangGraph · RAG · Ollama · llama.cpp · Whisper · MCP
