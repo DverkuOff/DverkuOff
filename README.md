@@ -6,7 +6,7 @@
   <p>
     <a href="https://t.me/DverkuOff">Telegram</a>
     &nbsp;·&nbsp;
-    <a href="mailto:wanna.chill.corp@gmail.com">Email</a>
+    <a href="mailto:work@dverkuoff.uk">Email</a>
   </p>
 </div>
 
